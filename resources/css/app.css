@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lato:wght@100;300;400;700;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+  
+.swiper-pagination-bullet{
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #FB2E86;
+  border-radius: 0;
+  background-color: #F2F0FF;
+  transform: rotate(-45deg);
+}
+.swiper-pagination-bullet-active {
+  background-color: #FB2E86;
+  color: #FB2E86;
+  opacity: 1;
+  border-radius: 0;
+}

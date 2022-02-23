@@ -1,6 +1,10 @@
+@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lato:wght@100;300;400;700;900&display=swap);
 /*
 ! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
-*//*
+*/
+
+/*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
@@ -340,6 +344,7 @@ button,
 /*
 Make sure disabled buttons don't get the pointer cursor.
 */
+
 :disabled {
   cursor: default;
 }
@@ -380,7 +385,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-*, ::before, ::after {
+*, ::before, ::after{
   --tw-translate-x: 0;
   --tw-translate-y: 0;
   --tw-rotate: 0;
@@ -424,46 +429,486 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
-.ml-36 {
-  margin-left: 9rem;
+.absolute{
+  position: absolute;
 }
-.flex {
+.inset-1\/3{
+  top: 33.333333%;
+  right: 33.333333%;
+  bottom: 33.333333%;
+  left: 33.333333%;
+}
+.right-40{
+  right: 10rem;
+}
+.right-28{
+  right: 7rem;
+}
+.right-44{
+  right: 11rem;
+}
+.mt-24{
+  margin-top: 6rem;
+}
+.mt-4{
+  margin-top: 1rem;
+}
+.mt-3{
+  margin-top: 0.75rem;
+}
+.mr-1{
+  margin-right: 0.25rem;
+}
+.ml-64{
+  margin-left: 16rem;
+}
+.mr-2{
+  margin-right: 0.5rem;
+}
+.ml-10{
+  margin-left: 2.5rem;
+}
+.ml-72{
+  margin-left: 18rem;
+}
+.ml-3{
+  margin-left: 0.75rem;
+}
+.ml-5{
+  margin-left: 1.25rem;
+}
+.mr-7{
+  margin-right: 1.75rem;
+}
+.mb-4{
+  margin-bottom: 1rem;
+}
+.ml-16{
+  margin-left: 4rem;
+}
+.ml-12{
+  margin-left: 3rem;
+}
+.mt-16{
+  margin-top: 4rem;
+}
+.mt-12{
+  margin-top: 3rem;
+}
+.mt-20{
+  margin-top: 5rem;
+}
+.mt-2{
+  margin-top: 0.5rem;
+}
+.mt-6{
+  margin-top: 1.5rem;
+}
+.flex{
   display: flex;
 }
-.h-11 {
-  height: 2.75rem;
+.hidden{
+  display: none;
 }
-.h-4 {
-  height: 1rem;
+.h-92{
+  height: 368px;
 }
-.h-5 {
+.h-56{
+  height: 14rem;
+}
+.h-1{
+  height: 0.25rem;
+}
+.h-5{
   height: 1.25rem;
 }
-.w-4 {
-  width: 1rem;
+.h-11{
+  height: 2.75rem;
 }
-.w-5 {
+.h-4{
+  height: 1rem;
+}
+.h-10{
+  height: 2.5rem;
+}
+.h-\[500px\]{
+  height: 500px;
+}
+.h-64{
+  height: 16rem;
+}
+.h-104{
+  height: 416px;
+}
+.h-24{
+  height: 6rem;
+}
+.h-96{
+  height: 24rem;
+}
+.h-full{
+  height: 100%;
+}
+.w-64{
+  width: 16rem;
+}
+.w-3{
+  width: 0.75rem;
+}
+.w-5{
   width: 1.25rem;
 }
-.items-center {
+.w-4{
+  width: 1rem;
+}
+.w-56{
+  width: 14rem;
+}
+.w-12{
+  width: 3rem;
+}
+.w-full{
+  width: 100%;
+}
+.w-104{
+  width: 416px;
+}
+.w-24{
+  width: 6rem;
+}
+.w-96{
+  width: 24rem;
+}
+.w-112{
+  width: 448px;
+}
+.w-32{
+  width: 8rem;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+.items-center{
   align-items: center;
 }
-.border-white {
+.items-baseline{
+  align-items: baseline;
+}
+.justify-center{
+  justify-content: center;
+}
+.rounded-lg{
+  border-radius: 0.5rem;
+}
+.rounded{
+  border-radius: 0.25rem;
+}
+.rounded-full{
+  border-radius: 9999px;
+}
+.rounded-sm{
+  border-radius: 0.125rem;
+}
+.border-2{
+  border-width: 2px;
+}
+.border-lightgrey{
   --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  border-color: rgb(231 230 239 / var(--tw-border-opacity));
 }
-.bg-purple-800 {
+.bg-background-grey{
   --tw-bg-opacity: 1;
-  background-color: rgb(107 33 168 / var(--tw-bg-opacity));
+  background-color: rgb(246 247 251 / var(--tw-bg-opacity));
 }
-.font-sans {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+.bg-open-blue{
+  --tw-bg-opacity: 1;
+  background-color: rgb(5 230 183 / var(--tw-bg-opacity));
 }
-.text-base {
+.bg-pink{
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 46 134 / var(--tw-bg-opacity));
+}
+.bg-darkblue{
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 11 91 / var(--tw-bg-opacity));
+}
+.bg-purple-600{
+  --tw-bg-opacity: 1;
+  background-color: rgb(147 51 234 / var(--tw-bg-opacity));
+}
+.bg-violet{
+  --tw-bg-opacity: 1;
+  background-color: rgb(126 51 224 / var(--tw-bg-opacity));
+}
+.bg-grey{
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 240 255 / var(--tw-bg-opacity));
+}
+.bg-lightpink{
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 210 250 / var(--tw-bg-opacity));
+}
+.bg-opacity-30{
+  --tw-bg-opacity: 0.3;
+}
+.px-1{
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.pt-2{
+  padding-top: 0.5rem;
+}
+.pb-2{
+  padding-bottom: 0.5rem;
+}
+.pt-36{
+  padding-top: 9rem;
+}
+.text-center{
+  text-align: center;
+}
+.font-lato{
+  font-family: Lato;
+}
+.font-josefin{
+  font-family: Josefin Sans;
+}
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+.text-base{
   font-size: 1rem;
   line-height: 1.5rem;
 }
-.text-white {
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+.font-bold{
+  font-weight: 700;
+}
+.font-semibold{
+  font-weight: 600;
+}
+.leading-5{
+  line-height: 1.25rem;
+}
+.leading-10{
+  line-height: 2.5rem;
+}
+.leading-9{
+  line-height: 2.25rem;
+}
+.tracking-wide{
+  letter-spacing: 0.025em;
+}
+.text-pink{
+  --tw-text-opacity: 1;
+  color: rgb(251 46 134 / var(--tw-text-opacity));
+}
+.text-navy-blue{
+  --tw-text-opacity: 1;
+  color: rgb(21 24 117 / var(--tw-text-opacity));
+}
+.text-darkblue{
+  --tw-text-opacity: 1;
+  color: rgb(26 11 91 / var(--tw-text-opacity));
+}
+.text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-blu{
+  --tw-text-opacity: 1;
+  color: rgb(13 14 67 / var(--tw-text-opacity));
+}
+.text-slate-400{
+  --tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+.shadow-xl{
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+
+  
+.swiper-pagination-bullet{
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #FB2E86;
+  border-radius: 0;
+  background-color: #F2F0FF;
+  transform: rotate(-45deg);
+}
+.swiper-pagination-bullet-active {
+  background-color: #FB2E86;
+  color: #FB2E86;
+  opacity: 1;
+  border-radius: 0;
+}
+.hover\:bg-purple-500:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(168 85 247 / var(--tw-bg-opacity));
+}
+.last\:hover\:bg-blue:hover:last-child{
+  --tw-bg-opacity: 1;
+  background-color: rgb(47 26 196 / var(--tw-bg-opacity));
+}
+.focus\:border-grey:focus{
+  --tw-border-opacity: 1;
+  border-color: rgb(242 240 255 / var(--tw-border-opacity));
+}
+.focus\:outline-none:focus{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+@media (min-width: 1536px){
+
+  .\32xl\:right-60{
+    right: 15rem;
+  }
+
+  .\32xl\:mt-32{
+    margin-top: 8rem;
+  }
+
+  .\32xl\:mr-2{
+    margin-right: 0.5rem;
+  }
+
+  .\32xl\:ml-96{
+    margin-left: 24rem;
+  }
+
+  .\32xl\:mr-3{
+    margin-right: 0.75rem;
+  }
+
+  .\32xl\:ml-12{
+    margin-left: 3rem;
+  }
+
+  .\32xl\:ml-5{
+    margin-left: 1.25rem;
+  }
+
+  .\32xl\:ml-8{
+    margin-left: 2rem;
+  }
+
+  .\32xl\:mr-9{
+    margin-right: 2.25rem;
+  }
+
+  .\32xl\:mt-5{
+    margin-top: 1.25rem;
+  }
+
+  .\32xl\:mb-5{
+    margin-bottom: 1.25rem;
+  }
+
+  .\32xl\:ml-24{
+    margin-left: 6rem;
+  }
+
+  .\32xl\:mt-20{
+    margin-top: 5rem;
+  }
+
+  .\32xl\:mt-24{
+    margin-top: 6rem;
+  }
+
+  .\32xl\:mt-52{
+    margin-top: 13rem;
+  }
+
+  .\32xl\:mt-3{
+    margin-top: 0.75rem;
+  }
+
+  .\32xl\:mt-8{
+    margin-top: 2rem;
+  }
+
+  .\32xl\:h-\[764px\]{
+    height: 764px;
+  }
+
+  .\32xl\:h-96{
+    height: 24rem;
+  }
+
+  .\32xl\:h-36{
+    height: 9rem;
+  }
+
+  .\32xl\:h-12{
+    height: 3rem;
+  }
+
+  .\32xl\:w-80{
+    width: 20rem;
+  }
+
+  .\32xl\:w-96{
+    width: 24rem;
+  }
+
+  .\32xl\:w-36{
+    width: 9rem;
+  }
+
+  .\32xl\:w-40{
+    width: 10rem;
+  }
+
+  .\32xl\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .\32xl\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .\32xl\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .\32xl\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .\32xl\:leading-7{
+    line-height: 1.75rem;
+  }
+
+  .\32xl\:leading-20{
+    line-height: 82px;
+  }
 }
