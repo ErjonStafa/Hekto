@@ -8,7 +8,7 @@
 
 
   
-.swiper-pagination-bullet{
+.swiper-pagination1 .swiper-pagination-bullet{
   opacity: 1;
   width: 10px;
   height: 10px;
@@ -17,9 +17,24 @@
   background-color: #F2F0FF;
   transform: rotate(-45deg);
 }
-.swiper-pagination-bullet-active {
+.swiper-pagination1 .swiper-pagination-bullet-active {
   background-color: #FB2E86;
   color: #FB2E86;
   opacity: 1;
   border-radius: 0;
+}
+
+
+.swiper-pagination2 .swiper-pagination-bullet{
+  opacity: 1;
+  width: 16px;
+  height: 4px;
+  border-radius: 10px;
+  background-color: #FEBAD7;
+}
+.swiper-pagination2 .swiper-pagination-bullet-active {
+  width: 24px;
+  background-color: #FB2E86;
+  color: #FB2E86;
+  opacity: 1;
 }

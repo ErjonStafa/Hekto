@@ -12,10 +12,7 @@
 
         </div>
         <div class="absolute 2xl:w-36 w-24 h-24 2xl:h-36 right-28 mt-12">
-            <div class="absolute text-white inset-1/3 font-josefin text-xl">
-                50% <br> off
-            </div>
-            <img src="{{ asset('Images/50%off.png')}}" class="2xl:w-36 w-24 h-24 2xl:h-36">
+            <img src="{{ asset('Images/50percent-off.png')}}" class="2xl:w-36 w-24 h-24 2xl:h-36">
         </div>
         <div class="absolute 2xl:right-60 right-44 2xl:mt-24 mt-20">
             <img src="{{ asset('Images/Shell-Shaped-Armchair-Pink-Velvet-Fabric-One-Seater-Sofa-for-Living-Room .png')}}"

@@ -12,14 +12,16 @@ const colors = {
       'grey': '#F2F0FF',
       'lightpink': '#ECD2FA',
       'darkblue': '#1A0B5B',
-      'open-blue': '#05E6B7',
+      'open-green': '#05E6B7',
+      'open-blue': '#1389FF',
       'sky-blue': '#F3F9FF',
       'background-grey': '#F6F7FB',
       'blue': '#2F1AC4',
       'off-navy-blue': '#3F509E',
       'navy-blue': '#151875',
       'panetone-purple': '#E0D3F5',
-
+      'latest-card': '#F7F7F7',
+      'shade': '#EEEFFB',
   },
 }
 
