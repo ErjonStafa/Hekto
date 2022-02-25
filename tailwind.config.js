@@ -22,6 +22,8 @@ const colors = {
       'panetone-purple': '#E0D3F5',
       'latest-card': '#F7F7F7',
       'shade': '#EEEFFB',
+      'sub-text-color': '#8A8FB9',
+      'another-grey': '#9DA0AE',
   },
 }
 
