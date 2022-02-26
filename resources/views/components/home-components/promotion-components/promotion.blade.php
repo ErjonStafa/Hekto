@@ -37,7 +37,7 @@
         </div>
 
         <div class="bg-pink text-white 2xl:text-base text-sm leading-9 2xl:w-40 w-32 2xl:h-12 h-10 rounded-sm flex text-center 2xl:mt-8 mt-6">
-            <a href="/shop" class="w-full h-full">
+            <a href="pages/shop-grid-default" class="w-full h-full">
                 Shop now
             </a>
         </div>

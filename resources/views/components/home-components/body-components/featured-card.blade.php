@@ -1,4 +1,4 @@
-<div class="w-64 h-92 shadow-xl m-2 transition duration-150 ease-in-out group hover:bg-blue cursor-pointer">
+<div class="w-64 h-92 shadow-xl m-2 transition duration-300 ease-in-out group hover:bg-blue cursor-pointer">
     <div class="hidden absolute group-hover:flex hover:justify-center hover:text-center mt-3 ml-3">
         <div class="rounded-full w-8 h-8 p-1 flex text-center hover:bg-shade hover:text-blue text-open-blue">
             <a href="/cart">
