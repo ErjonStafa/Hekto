@@ -432,6 +432,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .absolute{
   position: absolute;
 }
+.relative{
+  position: relative;
+}
 .right-40{
   right: 10rem;
 }
@@ -441,16 +444,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 .right-44{
   right: 11rem;
 }
+.z-10{
+  z-index: 10;
+}
+.z-20{
+  z-index: 20;
+}
 .m-2{
   margin: 0.5rem;
-}
-.mx-auto{
-  margin-left: auto;
-  margin-right: auto;
 }
 .mx-60{
   margin-left: 15rem;
   margin-right: 15rem;
+}
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
 }
 .mx-5{
   margin-left: 1.25rem;
@@ -460,11 +469,47 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 0.75rem;
   margin-right: 0.75rem;
 }
+.mt-10{
+  margin-top: 2.5rem;
+}
+.mt-20{
+  margin-top: 5rem;
+}
 .ml-64{
   margin-left: 16rem;
 }
 .mt-16{
   margin-top: 4rem;
+}
+.mr-3{
+  margin-right: 0.75rem;
+}
+.mt-44{
+  margin-top: 11rem;
+}
+.ml-3{
+  margin-left: 0.75rem;
+}
+.mr-4{
+  margin-right: 1rem;
+}
+.mr-1{
+  margin-right: 0.25rem;
+}
+.mt-8{
+  margin-top: 2rem;
+}
+.mt-12{
+  margin-top: 3rem;
+}
+.mt-3{
+  margin-top: 0.75rem;
+}
+.mr-2{
+  margin-right: 0.5rem;
+}
+.mt-7{
+  margin-top: 1.75rem;
 }
 .ml-5{
   margin-left: 1.25rem;
@@ -475,23 +520,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .ml-4{
   margin-left: 1rem;
 }
-.mt-10{
-  margin-top: 2.5rem;
-}
-.mr-3{
-  margin-right: 0.75rem;
-}
 .mt-24{
   margin-top: 6rem;
-}
-.mt-3{
-  margin-top: 0.75rem;
-}
-.ml-3{
-  margin-left: 0.75rem;
-}
-.mr-4{
-  margin-right: 1rem;
 }
 .mt-60{
   margin-top: 15rem;
@@ -501,12 +531,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .mt-4{
   margin-top: 1rem;
-}
-.mr-1{
-  margin-right: 0.25rem;
-}
-.mt-20{
-  margin-top: 5rem;
 }
 .mt-32{
   margin-top: 8rem;
@@ -532,32 +556,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .ml-12{
   margin-left: 3rem;
 }
-.mt-8{
-  margin-top: 2rem;
-}
-.mr-2{
-  margin-right: 0.5rem;
-}
-.ml-10{
-  margin-left: 2.5rem;
-}
-.ml-72{
-  margin-left: 18rem;
-}
-.mr-7{
-  margin-right: 1.75rem;
-}
 .mb-4{
   margin-bottom: 1rem;
 }
-.ml-16{
-  margin-left: 4rem;
-}
-.mt-12{
-  margin-top: 3rem;
-}
-.mt-7{
-  margin-top: 1.75rem;
+.mr-7{
+  margin-right: 1.75rem;
 }
 .mt-5{
   margin-top: 1.25rem;
@@ -565,8 +568,23 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mt-9{
   margin-top: 2.25rem;
 }
+.mt-0{
+  margin-top: 0px;
+}
+.ml-7{
+  margin-left: 1.75rem;
+}
+.ml-6{
+  margin-left: 1.5rem;
+}
+.ml-2{
+  margin-left: 0.5rem;
+}
 .box-border{
   box-sizing: border-box;
+}
+.block{
+  display: block;
 }
 .flex{
   display: flex;
@@ -574,14 +592,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .inline-flex{
   display: inline-flex;
 }
+.grid{
+  display: grid;
+}
 .hidden{
   display: none;
-}
-.h-6{
-  height: 1.5rem;
-}
-.h-7{
-  height: 1.75rem;
 }
 .h-60{
   height: 15rem;
@@ -592,17 +607,29 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-8{
   height: 2rem;
 }
+.h-6{
+  height: 1.5rem;
+}
+.h-72{
+  height: 18rem;
+}
+.h-3{
+  height: 0.75rem;
+}
+.h-64{
+  height: 16rem;
+}
+.h-52{
+  height: 13rem;
+}
+.h-7{
+  height: 1.75rem;
+}
 .h-56{
   height: 14rem;
 }
 .h-1{
   height: 0.25rem;
-}
-.h-72{
-  height: 18rem;
-}
-.h-64{
-  height: 16rem;
 }
 .h-80{
   height: 20rem;
@@ -619,9 +646,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-4{
   height: 1rem;
 }
-.h-10{
-  height: 2.5rem;
-}
 .h-\[500px\]{
   height: 500px;
 }
@@ -631,14 +655,40 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-24{
   height: 6rem;
 }
-.h-96{
-  height: 24rem;
+.h-10{
+  height: 2.5rem;
 }
 .h-full{
   height: 100%;
 }
-.h-3{
-  height: 0.75rem;
+.h-\[400px\]{
+  height: 400px;
+}
+.h-\[450px\]{
+  height: 450px;
+}
+.w-fit{
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.w-8{
+  width: 2rem;
+}
+.w-5{
+  width: 1.25rem;
+}
+.w-64{
+  width: 16rem;
+}
+.w-3{
+  width: 0.75rem;
+}
+.w-\[1141px\]{
+  width: 1141px;
+}
+.w-80{
+  width: 20rem;
 }
 .w-14{
   width: 3.5rem;
@@ -652,32 +702,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-40{
   width: 10rem;
 }
-.w-64{
-  width: 16rem;
-}
-.w-8{
-  width: 2rem;
-}
-.w-5{
-  width: 1.25rem;
-}
-.w-3{
-  width: 0.75rem;
-}
 .w-92{
   width: 368px;
 }
 .w-60{
   width: 15rem;
-}
-.w-80{
-  width: 20rem;
-}
-.w-56{
-  width: 14rem;
-}
-.w-12{
-  width: 3rem;
 }
 .w-full{
   width: 100%;
@@ -685,19 +714,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-104{
   width: 416px;
 }
-.w-96{
-  width: 24rem;
-}
 .w-112{
   width: 448px;
 }
 .w-32{
   width: 8rem;
 }
-.w-fit{
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+.w-72{
+  width: 18rem;
 }
 .cursor-pointer{
   cursor: pointer;
@@ -714,11 +738,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 .items-baseline{
   align-items: baseline;
 }
+.justify-end{
+  justify-content: flex-end;
+}
 .justify-center{
   justify-content: center;
 }
 .justify-between{
   justify-content: space-between;
+}
+.justify-items-stretch{
+  justify-items: stretch;
 }
 .rounded-full{
   border-radius: 9999px;
@@ -738,13 +768,32 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-2{
   border-width: 2px;
 }
+.border-8{
+  border-width: 8px;
+}
 .border-lightgrey{
   --tw-border-opacity: 1;
   border-color: rgb(231 230 239 / var(--tw-border-opacity));
 }
+.border-white{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
 .bg-background-grey{
   --tw-bg-opacity: 1;
   background-color: rgb(246 247 251 / var(--tw-bg-opacity));
+}
+.bg-\[\#DE9034\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(222 144 52 / var(--tw-bg-opacity));
+}
+.bg-pink{
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 46 134 / var(--tw-bg-opacity));
+}
+.bg-off-purple{
+  --tw-bg-opacity: 1;
+  background-color: rgb(159 99 181 / var(--tw-bg-opacity));
 }
 .bg-green-500{
   --tw-bg-opacity: 1;
@@ -753,10 +802,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-open-green{
   --tw-bg-opacity: 1;
   background-color: rgb(5 230 183 / var(--tw-bg-opacity));
-}
-.bg-pink{
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 46 134 / var(--tw-bg-opacity));
 }
 .bg-darkblue{
   --tw-bg-opacity: 1;
@@ -790,15 +835,34 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(236 210 250 / var(--tw-bg-opacity));
 }
-.bg-\[\#DE9034\]{
+.bg-\[\#2B2BF5\]{
   --tw-bg-opacity: 1;
-  background-color: rgb(222 144 52 / var(--tw-bg-opacity));
+  background-color: rgb(43 43 245 / var(--tw-bg-opacity));
+}
+.bg-\[\#2BF5CC\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(43 245 204 / var(--tw-bg-opacity));
+}
+.bg-\[\#F5F6F8\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 246 248 / var(--tw-bg-opacity));
+}
+.bg-\[\#FFF6FB\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 246 251 / var(--tw-bg-opacity));
+}
+.bg-\[\#EEEFFB\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 239 251 / var(--tw-bg-opacity));
 }
 .bg-opacity-30{
   --tw-bg-opacity: 0.3;
 }
 .p-1{
   padding: 0.25rem;
+}
+.p-3{
+  padding: 0.75rem;
 }
 .px-2{
   padding-left: 0.5rem;
@@ -808,11 +872,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 0.25rem;
   padding-right: 0.25rem;
 }
-.pl-1{
-  padding-left: 0.25rem;
-}
 .pt-16{
   padding-top: 4rem;
+}
+.pl-1{
+  padding-left: 0.25rem;
 }
 .pb-24{
   padding-bottom: 6rem;
@@ -835,6 +899,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 .pt-14{
   padding-top: 3.5rem;
 }
+.pl-6{
+  padding-left: 1.5rem;
+}
+.pt-9{
+  padding-top: 2.25rem;
+}
+.pt-8{
+  padding-top: 2rem;
+}
+.pr-3{
+  padding-right: 0.75rem;
+}
 .text-center{
   text-align: center;
 }
@@ -844,39 +920,46 @@ Ensure the default browser behavior of the `hidden` attribute.
 .font-lato{
   font-family: Lato;
 }
-.text-xl{
-  font-size: 1.25rem;
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.text-lg{
+  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
 }
-.text-base{
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
-.font-semibold{
-  font-weight: 600;
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 .font-bold{
   font-weight: 700;
+}
+.font-medium{
+  font-weight: 500;
+}
+.font-semibold{
+  font-weight: 600;
 }
 .leading-7{
   line-height: 1.75rem;
@@ -890,24 +973,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .leading-9{
   line-height: 2.25rem;
 }
+.leading-3{
+  line-height: .75rem;
+}
+.leading-8{
+  line-height: 2rem;
+}
 .tracking-wide{
   letter-spacing: 0.025em;
-}
-.text-navy-blue{
-  --tw-text-opacity: 1;
-  color: rgb(21 24 117 / var(--tw-text-opacity));
-}
-.text-sub-text-color{
-  --tw-text-opacity: 1;
-  color: rgb(138 143 185 / var(--tw-text-opacity));
-}
-.text-\[\#3F509E\]{
-  --tw-text-opacity: 1;
-  color: rgb(63 80 158 / var(--tw-text-opacity));
-}
-.text-off-navy-blue{
-  --tw-text-opacity: 1;
-  color: rgb(63 80 158 / var(--tw-text-opacity));
 }
 .text-\[\#101750\]{
   --tw-text-opacity: 1;
@@ -920,6 +993,38 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-open-blue{
   --tw-text-opacity: 1;
   color: rgb(19 137 255 / var(--tw-text-opacity));
+}
+.text-navy-blue{
+  --tw-text-opacity: 1;
+  color: rgb(21 24 117 / var(--tw-text-opacity));
+}
+.text-\[\#FFC416\]{
+  --tw-text-opacity: 1;
+  color: rgb(255 196 22 / var(--tw-text-opacity));
+}
+.text-\[\#B2B2B2\]{
+  --tw-text-opacity: 1;
+  color: rgb(178 178 178 / var(--tw-text-opacity));
+}
+.text-\[\#9295AA\]{
+  --tw-text-opacity: 1;
+  color: rgb(146 149 170 / var(--tw-text-opacity));
+}
+.text-\[\#535399\]{
+  --tw-text-opacity: 1;
+  color: rgb(83 83 153 / var(--tw-text-opacity));
+}
+.text-sub-text-color{
+  --tw-text-opacity: 1;
+  color: rgb(138 143 185 / var(--tw-text-opacity));
+}
+.text-\[\#3F509E\]{
+  --tw-text-opacity: 1;
+  color: rgb(63 80 158 / var(--tw-text-opacity));
+}
+.text-off-navy-blue{
+  --tw-text-opacity: 1;
+  color: rgb(63 80 158 / var(--tw-text-opacity));
 }
 .text-white{
   --tw-text-opacity: 1;
@@ -937,6 +1042,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(148 163 184 / var(--tw-text-opacity));
 }
+.text-grey{
+  --tw-text-opacity: 1;
+  color: rgb(242 240 255 / var(--tw-text-opacity));
+}
+.text-\[\#1518754d\]{
+  color: #1518754d;
+}
 .underline{
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -947,9 +1059,29 @@ Ensure the default browser behavior of the `hidden` attribute.
 .opacity-30{
   opacity: 0.3;
 }
+.opacity-70{
+  opacity: 0.7;
+}
+.opacity-100{
+  opacity: 1;
+}
+.opacity-90{
+  opacity: 0.9;
+}
+.opacity-10{
+  opacity: 0.1;
+}
+.bg-blend-overlay{
+  background-blend-mode: overlay;
+}
 .shadow-xl{
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.shadow-custom{
+  --tw-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+  --tw-shadow-colored: 0 0 25px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .shadow-inset{
@@ -1013,6 +1145,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-border-opacity: 1;
   border-bottom-color: rgb(251 146 60 / var(--tw-border-opacity));
 }
+.hover\:bg-white:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
 .hover\:bg-blue:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(47 26 196 / var(--tw-bg-opacity));
@@ -1055,13 +1191,13 @@ Ensure the default browser behavior of the `hidden` attribute.
 .group:hover .group-hover\:justify-center{
   justify-content: center;
 }
-.group:hover .group-hover\:bg-white{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
 .group:hover .group-hover\:bg-\[\#EBF4F3\]{
   --tw-bg-opacity: 1;
   background-color: rgb(235 244 243 / var(--tw-bg-opacity));
+}
+.group:hover .group-hover\:bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 .group:hover .group-hover\:text-center{
   text-align: center;
@@ -1080,10 +1216,566 @@ Ensure the default browser behavior of the `hidden` attribute.
 .group:hover .group-hover\:duration-150{
   transition-duration: 150ms;
 }
+@media (min-width: 640px){
+
+  .sm\:right-3{
+    right: 0.75rem;
+  }
+
+  .sm\:right-5{
+    right: 1.25rem;
+  }
+
+  .sm\:right-8{
+    right: 2rem;
+  }
+
+  .sm\:right-2{
+    right: 0.5rem;
+  }
+
+  .sm\:right-1{
+    right: 0.25rem;
+  }
+
+  .sm\:mx-36{
+    margin-left: 9rem;
+    margin-right: 9rem;
+  }
+
+  .sm\:mx-20{
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .sm\:ml-8{
+    margin-left: 2rem;
+  }
+
+  .sm\:ml-5{
+    margin-left: 1.25rem;
+  }
+
+  .sm\:mr-3{
+    margin-right: 0.75rem;
+  }
+
+  .sm\:ml-6{
+    margin-left: 1.5rem;
+  }
+
+  .sm\:ml-20{
+    margin-left: 5rem;
+  }
+
+  .sm\:h-8{
+    height: 2rem;
+  }
+
+  .sm\:h-32{
+    height: 8rem;
+  }
+
+  .sm\:h-14{
+    height: 3.5rem;
+  }
+
+  .sm\:h-6{
+    height: 1.5rem;
+  }
+
+  .sm\:h-28{
+    height: 7rem;
+  }
+
+  .sm\:h-24{
+    height: 6rem;
+  }
+
+  .sm\:h-36{
+    height: 9rem;
+  }
+
+  .sm\:w-36{
+    width: 9rem;
+  }
+
+  .sm\:w-7{
+    width: 1.75rem;
+  }
+
+  .sm\:w-32{
+    width: 8rem;
+  }
+
+  .sm\:w-14{
+    width: 3.5rem;
+  }
+
+  .sm\:w-8{
+    width: 2rem;
+  }
+
+  .sm\:w-6{
+    width: 1.5rem;
+  }
+
+  .sm\:w-28{
+    width: 7rem;
+  }
+
+  .sm\:w-24{
+    width: 6rem;
+  }
+
+  .sm\:w-52{
+    width: 13rem;
+  }
+
+  .sm\:w-56{
+    width: 14rem;
+  }
+
+  .sm\:px-2{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .sm\:pt-52{
+    padding-top: 13rem;
+  }
+
+  .sm\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .sm\:text-xs{
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .sm\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .sm\:leading-9{
+    line-height: 2.25rem;
+  }
+
+  .sm\:leading-8{
+    line-height: 2rem;
+  }
+}
+@media (min-width: 768px){
+
+  .md\:right-12{
+    right: 3rem;
+  }
+
+  .md\:right-14{
+    right: 3.5rem;
+  }
+
+  .md\:right-8{
+    right: 2rem;
+  }
+
+  .md\:right-6{
+    right: 1.5rem;
+  }
+
+  .md\:mx-48{
+    margin-left: 12rem;
+    margin-right: 12rem;
+  }
+
+  .md\:mx-36{
+    margin-left: 9rem;
+    margin-right: 9rem;
+  }
+
+  .md\:ml-20{
+    margin-left: 5rem;
+  }
+
+  .md\:ml-3{
+    margin-left: 0.75rem;
+  }
+
+  .md\:h-10{
+    height: 2.5rem;
+  }
+
+  .md\:h-40{
+    height: 10rem;
+  }
+
+  .md\:h-48{
+    height: 12rem;
+  }
+
+  .md\:h-20{
+    height: 5rem;
+  }
+
+  .md\:h-44{
+    height: 11rem;
+  }
+
+  .md\:h-16{
+    height: 4rem;
+  }
+
+  .md\:h-12{
+    height: 3rem;
+  }
+
+  .md\:h-8{
+    height: 2rem;
+  }
+
+  .md\:w-56{
+    width: 14rem;
+  }
+
+  .md\:w-12{
+    width: 3rem;
+  }
+
+  .md\:w-48{
+    width: 12rem;
+  }
+
+  .md\:w-40{
+    width: 10rem;
+  }
+
+  .md\:w-20{
+    width: 5rem;
+  }
+
+  .md\:w-44{
+    width: 11rem;
+  }
+
+  .md\:w-16{
+    width: 4rem;
+  }
+
+  .md\:w-52{
+    width: 13rem;
+  }
+
+  .md\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .md\:pt-32{
+    padding-top: 8rem;
+  }
+
+  .md\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .md\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .md\:leading-8{
+    line-height: 2rem;
+  }
+}
+@media (min-width: 1024px){
+
+  .lg\:right-20{
+    right: 5rem;
+  }
+
+  .lg\:right-24{
+    right: 6rem;
+  }
+
+  .lg\:right-14{
+    right: 3.5rem;
+  }
+
+  .lg\:right-12{
+    right: 3rem;
+  }
+
+  .lg\:mx-60{
+    margin-left: 15rem;
+    margin-right: 15rem;
+  }
+
+  .lg\:mx-56{
+    margin-left: 14rem;
+    margin-right: 14rem;
+  }
+
+  .lg\:ml-32{
+    margin-left: 8rem;
+  }
+
+  .lg\:ml-10{
+    margin-left: 2.5rem;
+  }
+
+  .lg\:ml-36{
+    margin-left: 9rem;
+  }
+
+  .lg\:mr-7{
+    margin-right: 1.75rem;
+  }
+
+  .lg\:ml-16{
+    margin-left: 4rem;
+  }
+
+  .lg\:ml-5{
+    margin-left: 1.25rem;
+  }
+
+  .lg\:ml-64{
+    margin-left: 16rem;
+  }
+
+  .lg\:ml-52{
+    margin-left: 13rem;
+  }
+
+  .lg\:h-64{
+    height: 16rem;
+  }
+
+  .lg\:h-24{
+    height: 6rem;
+  }
+
+  .lg\:h-72{
+    height: 18rem;
+  }
+
+  .lg\:h-20{
+    height: 5rem;
+  }
+
+  .lg\:h-10{
+    height: 2.5rem;
+  }
+
+  .lg\:w-64{
+    width: 16rem;
+  }
+
+  .lg\:w-24{
+    width: 6rem;
+  }
+
+  .lg\:w-72{
+    width: 18rem;
+  }
+
+  .lg\:w-20{
+    width: 5rem;
+  }
+
+  .lg\:w-32{
+    width: 8rem;
+  }
+
+  .lg\:w-80{
+    width: 20rem;
+  }
+
+  .lg\:w-60{
+    width: 15rem;
+  }
+
+  .lg\:w-52{
+    width: 13rem;
+  }
+
+  .lg\:w-44{
+    width: 11rem;
+  }
+
+  .lg\:px-36{
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+
+  .lg\:pt-32{
+    padding-top: 8rem;
+  }
+
+  .lg\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .lg\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+@media (min-width: 1280px){
+
+  .xl\:right-40{
+    right: 10rem;
+  }
+
+  .xl\:right-44{
+    right: 11rem;
+  }
+
+  .xl\:right-32{
+    right: 8rem;
+  }
+
+  .xl\:right-28{
+    right: 7rem;
+  }
+
+  .xl\:right-24{
+    right: 6rem;
+  }
+
+  .xl\:mx-80{
+    margin-left: 20rem;
+    margin-right: 20rem;
+  }
+
+  .xl\:mx-72{
+    margin-left: 18rem;
+    margin-right: 18rem;
+  }
+
+  .xl\:ml-56{
+    margin-left: 14rem;
+  }
+
+  .xl\:ml-12{
+    margin-left: 3rem;
+  }
+
+  .xl\:ml-64{
+    margin-left: 16rem;
+  }
+
+  .xl\:h-96{
+    height: 24rem;
+  }
+
+  .xl\:h-104{
+    height: 416px;
+  }
+
+  .xl\:h-80{
+    height: 20rem;
+  }
+
+  .xl\:h-72{
+    height: 18rem;
+  }
+
+  .xl\:h-24{
+    height: 6rem;
+  }
+
+  .xl\:w-96{
+    width: 24rem;
+  }
+
+  .xl\:w-104{
+    width: 416px;
+  }
+
+  .xl\:w-80{
+    width: 20rem;
+  }
+
+  .xl\:w-72{
+    width: 18rem;
+  }
+
+  .xl\:w-24{
+    width: 6rem;
+  }
+
+  .xl\:w-112{
+    width: 448px;
+  }
+
+  .xl\:px-60{
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+
+  .xl\:pt-36{
+    padding-top: 9rem;
+  }
+
+  .xl\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .xl\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .xl\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .xl\:leading-7{
+    line-height: 1.75rem;
+  }
+
+  .xl\:leading-9{
+    line-height: 2.25rem;
+  }
+}
 @media (min-width: 1536px){
 
   .\32xl\:right-60{
     right: 15rem;
+  }
+
+  .\32xl\:right-56{
+    right: 14rem;
+  }
+
+  .\32xl\:right-48{
+    right: 12rem;
+  }
+
+  .\32xl\:right-44{
+    right: 11rem;
+  }
+
+  .\32xl\:right-40{
+    right: 10rem;
   }
 
   .\32xl\:mx-8{
@@ -1091,8 +1783,17 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-right: 2rem;
   }
 
+  .\32xl\:mx-96{
+    margin-left: 24rem;
+    margin-right: 24rem;
+  }
+
   .\32xl\:ml-96{
     margin-left: 24rem;
+  }
+
+  .\32xl\:mt-20{
+    margin-top: 5rem;
   }
 
   .\32xl\:mt-24{
@@ -1163,14 +1864,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-left: 6rem;
   }
 
-  .\32xl\:mt-20{
-    margin-top: 5rem;
-  }
-
-  .\32xl\:mt-52{
-    margin-top: 13rem;
-  }
-
   .\32xl\:mt-3{
     margin-top: 0.75rem;
   }
@@ -1199,6 +1892,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 3rem;
   }
 
+  .\32xl\:h-104{
+    height: 416px;
+  }
+
+  .\32xl\:h-\[580px\]{
+    height: 580px;
+  }
+
   .\32xl\:w-96{
     width: 24rem;
   }
@@ -1219,18 +1920,43 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 10rem;
   }
 
+  .\32xl\:w-104{
+    width: 416px;
+  }
+
+  .\32xl\:w-\[650px\]{
+    width: 650px;
+  }
+
+  .\32xl\:w-full{
+    width: 100%;
+  }
+
+  .\32xl\:w-112{
+    width: 448px;
+  }
+
+  .\32xl\:px-80{
+    padding-left: 20rem;
+    padding-right: 20rem;
+  }
+
   .\32xl\:pt-24{
     padding-top: 6rem;
   }
 
-  .\32xl\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
+  .\32xl\:pt-52{
+    padding-top: 13rem;
   }
 
   .\32xl\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .\32xl\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .\32xl\:text-5xl{
@@ -1254,5 +1980,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .\32xl\:leading-20{
     line-height: 82px;
+  }
+
+  .\32xl\:leading-10{
+    line-height: 2.5rem;
   }
 }

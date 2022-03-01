@@ -3,7 +3,7 @@
     
         {{-- email --}}
         <a href="mailto:mhhasanul@gmail.com" class="flex">
-            <x-far-envelope class="w-4 h-4 2xl:ml-96 ml-64 2xl:mr-3 mr-2"/>
+            <x-far-envelope class="w-4 h-4 2xl:ml-96 xl:ml-56 lg:ml-32 sm:ml-8 ml-3 2xl:mr-3 mr-2"/>
             <div>
                 mhhasanul@gmail.com
             </div>
@@ -11,7 +11,7 @@
     
         {{-- phone --}}
         <a href="tel:(12345)67890" class="flex">
-            <x-bx-phone-call class="w-4 h-4 2xl:ml-12 ml-10 2xl:mr-3 mr-2"/>
+            <x-bx-phone-call class="w-4 h-4 2xl:ml-12 lg:ml-10 sm:ml-5 2xl:mr-3 mr-2"/>
             <div>
                 (12345)67890
             </div>
@@ -22,7 +22,7 @@
             $selected = 'English';
             $options = array('English', 'Albanian');
         @endphp
-        <div class="2xl:ml-96 ml-72">
+        <div class="2xl:ml-96 xl:ml-56 lg:ml-36 md:ml-20 sm:ml-8">
             <x-home-components.header-components.header-dropdown :type='"language"' :selected="$selected" :options="$options"/>
         </div>
     
@@ -36,7 +36,7 @@
         </div>
     
         {{-- login --}}
-        <a href="/login" class="flex">
+        <a href="/login" id="login" class="flex">
             <div class="2xl:ml-5 ml-3 2xl:mr-2 mr-1">
                 Login
             </div>

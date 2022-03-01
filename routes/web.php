@@ -17,11 +17,11 @@ Route::get('/', function () {
     return view('welcome');
 })->name('Home');
 
-Route::get('pages/shop-grid-default', function () {
+Route::get('/pages/shop-grid-default', function () {
     return view('components.grid-default');
 })->name('Home.Pages.Shop Grid Default');
 
-Route::get('pages/shop-list', function () {
+Route::get('/pages/shop-list', function () {
     return view('components.shop-list');
 })->name('Home.Pages.Shop List');
 
