@@ -3,7 +3,7 @@
 </div>
 
 
-<div class="2xl:mt-32 mt-24">
+<div class="2xl:mt-32 mt-24 text-center">
     <x-home-components.body-components.section-title :text="'Featured Products'" />
 </div>
 
@@ -11,7 +11,7 @@
     <x-home-components.body-components.featured/>
 </div>
 
-<div class="2xl:mt-32 mt-24">
+<div class="2xl:mt-32 mt-24 text-center">
     <x-home-components.body-components.section-title :text="'Latest Products'" />
 </div>
 
@@ -19,7 +19,7 @@
     <x-home-components.body-components.latest />
 </div>
 
-<div class="2xl:mt-32 mt-24">
+<div class="2xl:mt-32 mt-24 text-center">
     <x-home-components.body-components.section-title :text="'What Shopex Offer!'" />
 </div>
 
@@ -37,7 +37,7 @@
     />
 </div>
 
-<div class="2xl:mt-32 mt-24">
+<div class="2xl:mt-32 mt-24 text-center">
     <x-home-components.body-components.section-title :text="'Trending Products'" />
 </div>
 

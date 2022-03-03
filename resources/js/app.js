@@ -1,65 +1,88 @@
 require('./bootstrap');
 
+window.onload = () => {
+    // show and hide languages
 
-// language dropdown
+    const currentSelectedLanguage = document.getElementById('current-select-language');
+    const otherSelectLanguage = document.getElementById('other-select-language');
 
-$(document).ready(function(){
-    $("#current-select-language").on('click', function () {
-        $("#other-select-language").toggleClass('hidden');
+    currentSelectedLanguage.onclick = () => {
+        otherSelectLanguage.classList.toggle('hidden');
+    }
+
+    //change language to english
+    const englishLang = document.getElementById('English');
+    const currentSelectedLanguageText = document.getElementById('current-select-language-text');
+    englishLang.onclick = () => {
+        currentSelectedLanguageText.innerHTML = englishLang.innerText;
+        otherSelectLanguage.classList.toggle('hidden');
+    }
+
+    //change language to Albanian
+
+    const albanianLang = document.getElementById('Albanian');
+
+    albanianLang.onclick = () => {
+        currentSelectedLanguageText.innerHTML = albanianLang.innerText;
+        otherSelectLanguage.classList.toggle('hidden');
+    }
+
+
+    // show and hide currency
+
+    const currentSelectedCurrency = document.getElementById('current-select-currency');
+    const otherSelectCurrency = document.getElementById('other-select-currency');
+
+    currentSelectedCurrency.onclick = () => {
+        otherSelectCurrency.classList.toggle('hidden');
+    }
+
+    //change currency to USD
+    const USD = document.getElementById('USD');
+    const currentSelectedCurrencyText = document.getElementById('current-select-currency-text');
+    USD.onclick = () => {
+        currentSelectedCurrencyText.innerHTML = USD.innerText;
+        otherSelectCurrency.classList.toggle('hidden');
+    }
+
+    //change currency to EUR
+    const EUR = document.getElementById('EUR');
+
+    EUR.onclick = () => {
+        currentSelectedCurrencyText.innerHTML = EUR.innerText;
+        otherSelectCurrency.classList.toggle('hidden');
+    }
+
+    //toggle mobile dropdown in header
+
+    document.querySelector('#header-drop').addEventListener('click', function(){
+        document.querySelector('#header-items').classList.toggle('hidden');
     });
-    $("#English").on('click', function () {
-        $('#current-select-language-text').html($(this).text());
-        $("#other-select-language").toggleClass('hidden');
-    });
-    $("#Albanian").on('click', function () {
-        $('#current-select-language-text').html($(this).text());
-        $("#other-select-language").toggleClass('hidden');
-    });
-    
-    // currency dropdown
-    $("#current-select-currency").on('click', function () {
-        $("#other-select-currency").toggleClass('hidden');
-    });
-    $("#USD").on('click', function () {
-        $('#current-select-currency-text').html($(this).text());
-        $("#other-select-currency").toggleClass('hidden');
-    });
-    $("#EUR").on('click', function () {
-        $('#current-select-currency-text').html($(this).text());
-        $("#other-select-currency").toggleClass('hidden');
+
+    //change from grid to list
+
+    const gridSection = document.getElementById('grid-section');
+    const listSection = document.getElementById('list-section');
+    const currectUrlTitle = document.getElementById('current-location-title');
+    const currectUrl = document.getElementById('current-location');
+
+    document.querySelector('#list').addEventListener('click', function (e) {
+        e.preventDefault();
+        gridSection.style.display = 'none';
+        currectUrl.innerText = 'Shop List';
+        currectUrlTitle.innerText = 'Shop List';
+        listSection.style.display = 'block';
     });
 
-    // $('#grid').on('click', function(e){
-    //     e.preventDefault();
-    //     window.history.replaceState('', '', '/pages/shop-grid-default');
-    //     $.ajax({
-    //         type: 'GET',
-    //         url: '/pages/shop-grid-default',
-    //         success: function(data){
-    //             document.write(data);
-    //             history.pushState('','' , '/pages/shop-grid-default');
-    //         }
-    //     });
-    // });
-
-    // $('#list').on('click', function(e){
-    //     e.preventDefault();
-
-    //     window.history.replaceState('', '', '/pages/shop-list');
-    //     $.ajax({
-    //         type: 'GET',
-    //         url: '/pages/shop-list',
-    //         success: function(data){
-    //             document.write(data);
-    //             history.pushState('','' , '/pages/shop-list');
-    //         }
-    //     });
-    // });
-});
-
-
-
-// swiper
+    document.querySelector('#grid').addEventListener('click', function (e) {
+        e.preventDefault();
+        gridSection.style.display = 'block';
+        currectUrl.innerText = 'Shop Grid Default';
+        currectUrlTitle.innerText = 'Shop Grid Default';
+        listSection.style.display = 'none';
+    });
+};
+// first swiper
 var swiper = new Swiper(".swiper1", {
     pagination: {
         el: ".swiper-pagination1",
@@ -72,7 +95,7 @@ var swiper = new Swiper(".swiper1", {
     slidesPerView: 'auto',
 
 });
-
+//second swiper
 var swiper = new Swiper(".swiper2", {
     pagination: {
         el: ".swiper-pagination2",

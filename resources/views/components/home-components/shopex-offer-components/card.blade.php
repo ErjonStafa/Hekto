@@ -6,6 +6,6 @@
         {{ $title }}
     </div>
     <div class="mx-3 flex justify-center text-center font-lato font-bold text-sm text-darkblue opacity-30 mt-5">
-        {{ $description }}
+        <x-home-components.body-components.descriptions :text="$description"/>
     </div>
 </div>

@@ -4,7 +4,6 @@
             {{ $selected }}
         </div>
         <x-bx-chevron-down class="w-5 h-5"/>
-        
     </div>
     
     <div class="absolute">

@@ -16,45 +16,47 @@
                 (12345)67890
             </div>
         </a>
-    
-        {{-- language --}}
-        @php
-            $selected = 'English';
-            $options = array('English', 'Albanian');
-        @endphp
-        <div class="2xl:ml-96 xl:ml-56 lg:ml-36 md:ml-20 sm:ml-8">
-            <x-home-components.header-components.header-dropdown :type='"language"' :selected="$selected" :options="$options"/>
+
+        <div id="header-drop" class="sm:hidden block absolute right-2">
+            <x-fas-bars class="w-5"/>
         </div>
-    
-        {{-- currency --}}
-        @php
-            $selected = 'USD';
-            $options = array('USD', 'EUR');
-        @endphp
-        <div class="2xl:ml-5 ml-3 2xl:mr-2 mr-1">
-            <x-home-components.header-components.header-dropdown :type='"currency"' :selected="$selected" :options="$options"/>
+
+        <div id="header-items" class="sm:flex sm:relative sm:bg-violet sm:text-white text-violet bg-white absolute right-0 w-36 hidden">
+            
+            {{-- language --}}
+            @php
+                $selected = 'English';
+                $options = array('English', 'Albanian');
+            @endphp
+            <div class="2xl:ml-96 xl:ml-56 lg:ml-36 md:ml-20 sm:ml-8">
+                <x-home-components.header-components.header-dropdown :type='"language"' :selected="$selected" :options="$options"/>
+            </div>
+            {{-- currency --}}
+            @php
+                $selected = 'USD';
+                $options = array('USD', 'EUR');
+            @endphp
+            <div class="2xl:ml-5 ml-3 2xl:mr-2 mr-1">
+                <x-home-components.header-components.header-dropdown :type='"currency"' :selected="$selected" :options="$options"/>
+            </div>
+            {{-- login --}}
+            <a href="/login" id="login" class="flex">
+                <div class="2xl:ml-5 ml-3 2xl:mr-2 mr-1">
+                    Login
+                </div>
+                <x-far-user class="w-4 h-4  " />
+            </a>
+            {{-- wishlist --}}
+            <a href="/wishlist" class="flex">
+                <div class="2xl:ml-5 ml-3 2xl:mr-2 mr-1">
+                    Wishlist
+                </div>
+                <x-bx-heart class="w-4 h-4" />
+            </a>
+            {{-- cart --}}
+            <a href="/cart">
+                <x-bx-cart class="w-5 h-5 2xl:ml-8 ml-5 " />
+            </a>
+                </div>
         </div>
-    
-        {{-- login --}}
-        <a href="/login" id="login" class="flex">
-            <div class="2xl:ml-5 ml-3 2xl:mr-2 mr-1">
-                Login
-            </div>
-            <x-far-user class="w-4 h-4  " />
-        </a>
-    
-        {{-- wishlist --}}
-    
-        <a href="/wishlist" class="flex">
-            <div class="2xl:ml-5 ml-3 2xl:mr-2 mr-1">
-                Wishlist
-            </div>
-            <x-bx-heart class="w-4 h-4" />
-        </a>
-    
-        {{-- cart --}}
-        <a href="/cart">
-            <x-bx-cart class="w-5 h-5 2xl:ml-8 ml-5 " />
-        </a>
-    </div>
 </div>

@@ -19,7 +19,7 @@
 
     <button class="hidden absolute mt-60 ml-20 w-24 h-7 text-sm group-hover:justify-center leading-7 group-hover:text-center rounded font-josefin text-white bg-green-500 group-hover:flex group-hover:mt-48 group-hover:transition group-hover:duration-150">View Details</button>
 
-    <div id="product-image" class=" w-64 h-56 bg-background-grey flex justify-center items-center">
+    <div id="product-image" class="w-64 h-56 bg-background-grey flex justify-center items-center">
         <img src="{{ $link }}">
     </div>
     <div class="text-center mt-4">

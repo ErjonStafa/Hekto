@@ -1,4 +1,4 @@
-<div class="2xl:mt-30 w-92 h-72 mt-20 2xl:mx-8 mx-5 group cursor-pointer">
+<div class="2xl:mt-30 lg:w-92 md:w-80 sm:w-92 lg:h-72 md:h-64 sm:h-72 mt-20 mx-8 group cursor-pointer">
     <div class="hidden group-hover:flex group-hover:absolute">
         <img src="Images/Latest/Group 27.png">
     </div>

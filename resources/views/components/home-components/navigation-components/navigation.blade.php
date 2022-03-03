@@ -7,7 +7,7 @@
         <x-home-components.navigation-components.navigation-links :link="'/pages'" :text="'Pages'" :selected="false"/>
         <x-home-components.navigation-components.navigation-links :link="'/products'" :text="'Products'" :selected="false"/>
         <x-home-components.navigation-components.navigation-links :link="'/blog'" :text="'Blog'" :selected="false"/>
-        <x-home-components.navigation-components.navigation-links :link="'/pages/shop-grid-default'" :text="'Shop'" :selected="false"/>
+        <x-home-components.navigation-components.navigation-links :link="'/pages/shop'" :text="'Shop'" :selected="false"/>
         <x-home-components.navigation-components.navigation-links :link="'/pages/contact-us'" :text="'Contact'" :selected="false"/>
     </div>
 

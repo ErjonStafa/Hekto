@@ -1,4 +1,4 @@
-<div class="w-72 h-92 mr-7 flex flex-col text-center shadow-inset group cursor-pointer">
+<div class="w-72 h-92 lg:mt-0 sm:mt-10 mr-7 flex flex-col text-center shadow-inset group cursor-pointer">
     <div class="border-8 border-white w-full mt-0 h-72 bg-[#F5F6F8] flex justify-center items-center">
         <img src="{{ $link }}">
     </div>
