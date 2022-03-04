@@ -1,6 +1,6 @@
 <div class="bg-shade mt-40 h-fit pb-4 lg:flex sm:block">
     <div class="flex">
-        <div class="flex flex-col 2xl:ml-72 ml-36 2xl:pt-24 pt-16">
+        <div class="flex flex-col sm:justify-start sm:items-start justify-center items-center 2xl:ml-72 md:ml-36 sm:ml-28 ml-10 2xl:pt-24 pt-16">
             <div id="title" class="font-josefin text-4xl mb-8">
                 Hekto
             </div>

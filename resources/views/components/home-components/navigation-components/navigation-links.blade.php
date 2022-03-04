@@ -5,6 +5,7 @@
     text-pink
 @else
     text-darkblue
+    sm:block hidden
 @endif
     cursor-pointer
     lg:text-base 

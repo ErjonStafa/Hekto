@@ -1,10 +1,10 @@
-<div class="bg-grey 2xl:h-[580px] h-[450px]">
-    <div class="flex justify-center items-center 2xl:px-80 xl:px-60 lg:px-36 md:px-12 sm:px-2">
+<div class="bg-grey pt-10 pb-10">
+    <div class="flex sm:flex-row flex-col justify-center items-center 2xl:px-80 xl:px-60 lg:px-36 md:px-12 sm:px-2">
         <div>
-            <img src="{{ $link }}" class="absolute 2xl:w-112 xl:w-80 lg:w-60 sm:w-52 ">
-            <img src="/Images/Ellipse 63.png" class="2xl:w-112 xl:w-96 lg:w-64 sm:w-56">
+            <img src="{{ $link }}" class="absolute 2xl:w-112 xl:w-80 lg:w-60 sm:w-52 w-60 ">
+            <img src="/Images/Ellipse 63.png" class="2xl:w-112 xl:w-96 lg:w-64 sm:w-56 w-64">
         </div>
-        <div class="mt-24 ml-7">
+        <div class="ml-7">
             <div>
                 <x-home-components.body-components.section-title :text="$title" />
             </div>

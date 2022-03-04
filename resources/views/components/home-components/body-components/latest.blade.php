@@ -16,7 +16,7 @@ $products = array(
 @endphp
 
 
-<div class="flex flex-wrap justify-center items-center">
+<div class="flex flex-wrap 2xl:justify-start justify-center items-center">
     @foreach ($products as $item)
         <x-home-components.body-components.latest-card :link="$item['link']" :name="$item['name']" :discount="$item['discount']"
             :price="$item['price']" />

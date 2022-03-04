@@ -38,3 +38,18 @@
   color: #FB2E86;
   opacity: 1;
 }
+
+.swiper-pagination3 .swiper-pagination-bullet{
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #FB2E86;
+  border-radius: 50%;
+  background-color: white;
+}
+.swiper-pagination3 .swiper-pagination-bullet-active {
+  background-color: #FB2E86;
+  color: #FB2E86;
+  opacity: 1;
+  border-radius: 50%;
+}

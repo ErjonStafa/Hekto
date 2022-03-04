@@ -22,12 +22,9 @@
 <div>
     <div class="swiper swiper2 pb-24">
         <div class="swiper-wrapper">
-            @for ($i = 0; $i < count($product); $i= $i + 4)
-                <div class="swiper-slide flex flex-wrap justify-center items-center mx-auto">
+            @for ($i = 0; $i < count($product); $i++)
+                <div class="swiper-slide flex flex-wrap justify-center items-center">
                     <x-home-components.body-components.featured-card :link="$product[$i]['link']" :name="$product[$i]['name']" :code="$product[$i]['code']" :price="$product[$i]['price']"/>
-                    <x-home-components.body-components.featured-card :link="$product[$i+1]['link']" :name="$product[$i+1]['name']" :code="$product[$i+1]['code']" :price="$product[$i+1]['price']"/>
-                    <x-home-components.body-components.featured-card :link="$product[$i+2]['link']" :name="$product[$i+2]['name']" :code="$product[$i+2]['code']" :price="$product[$i+2]['price']"/>
-                    <x-home-components.body-components.featured-card :link="$product[$i+3]['link']" :name="$product[$i+3]['name']" :code="$product[$i+3]['code']" :price="$product[$i+3]['price']"/>
                 </div>
             @endfor
         </div>

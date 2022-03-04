@@ -10,7 +10,7 @@
         </div>
     </div>
 
-    <div class="mx-96 text-center mt-6">
+    <div class="xl:mx-96 lg:mx-60 md:mx-36 sm:mx-16 mx-2 text-center mt-6">
         <div class="font-lato 2xl:text-2xl text-xl font-semibold">
             Selina Gomez
         </div>

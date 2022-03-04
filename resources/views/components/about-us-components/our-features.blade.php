@@ -1,4 +1,4 @@
-<div class="flex justify-center items-center 2xl:mt-14 mt-9">
+<div class="flex flex-wrap justify-center items-center 2xl:mt-14 mt-9">
     <div>
         <x-home-components.shopex-offer-components.card :link="'/Images/Shopex-offer/free-delivery 1.png'" :title="'Free Delivery'" :description="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.'"/>
     </div>

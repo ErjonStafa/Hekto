@@ -31,7 +31,7 @@
             </div>
             <div class="w-3 h-1 bg-pink rounded-lg mr-1">
             </div>
-            <div class="w-3 h-1 bg-darkblue rounded-lg mr-1">
+            <div class="w-3 h-1 bg-darkblue group-hover:bg-[#FFEAC1] rounded-lg mr-1">
             </div>
         </div>
         <div class="font-josefin text-sm text-navy-blue mt-3 group-hover:text-white">

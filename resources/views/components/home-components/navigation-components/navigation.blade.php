@@ -2,7 +2,7 @@
     <div id="title" class="2xl:text-4xl text-3xl font-semibold font-josefin">
         <a href="/">Hekto</a>
     </div>
-    <div class="flex 2xl:ml-24 lg:ml-16 sm:ml-6 items-baseline">
+    <div class="flex 2xl:ml-24 lg:ml-16 sm:ml-6 ml-5 items-baseline">
         <x-home-components.navigation-components.navigation-links :link="'/'" :text="'Home'" :selected="true"/>
         <x-home-components.navigation-components.navigation-links :link="'/pages'" :text="'Pages'" :selected="false"/>
         <x-home-components.navigation-components.navigation-links :link="'/products'" :text="'Products'" :selected="false"/>

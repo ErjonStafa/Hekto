@@ -3,7 +3,7 @@
     <img src="/Images/Ellipse 70.png" class="absolute">
     <img src="/Images/Vector 15.png" class="absolute">
 </div>
-<div class="absolute mx-[273px]">
+<div class="absolute sm:block hidden xl:mx-[273px] lg:mx-[193px] md:mx-[97px] sm:mx-[17px]">
     <img src="/Images/clock 1.png">
 </div>
 <div class="mt-10 text-center">
@@ -12,7 +12,7 @@
 
 <div class="flex">
     <div
-        class="mx-80 flex justify-center items-center w-full h-60 border-l border-b border-dashed border-l-[#D2D1D1] border-b-[#D2D1D1]">
+        class="xl:mx-80 lg:mx-60 md:mx-36 sm:mx-16 mx-3 flex justify-center items-center w-full h-60 border-l-2 border-b-2 border-dashed border-l-[#D2D1D1] border-b-[#D2D1D1]">
         <div class="flex flex-col justify-center items-center text-center">
             <div class="font-lato font-semibold text-[#8D92A7]">
                 <x-home-components.body-components.descriptions :text="'Thank you for your order! Your order is being processed and will be completed within 3-6
@@ -24,7 +24,7 @@
             </div>
         </div>
     </div>
-    <div class="absolute mt-48 right-72">
+    <div class="absolute mt-48 xl:right-72 lg:right-60 md:right-36 sm:right-16 sm:block hidden">
         <img src="/Images/Group.png">
     </div>
 </div>

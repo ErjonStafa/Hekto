@@ -1,4 +1,4 @@
-<div class="2xl:mt-30 lg:w-92 md:w-80 sm:w-92 lg:h-72 md:h-64 sm:h-72 mt-20 mx-8 group cursor-pointer">
+<div class="2xl:mt-30 lg:w-92 md:w-80 sm:w-92 w-11/12 lg:h-72 md:h-64 sm:h-72 mt-20 mx-8 group cursor-pointer">
     <div class="hidden group-hover:flex group-hover:absolute">
         <img src="Images/Latest/Group 27.png">
     </div>
@@ -19,7 +19,7 @@
             </a>
         </div>
     </div>
-    <div class="bg-latest-card group-hover:bg-white w-92 h-64 flex justify-center items-center">
+    <div class="bg-latest-card group-hover:bg-white w-full h-64 flex justify-center items-center">
         <img src="{{ $link }}" class="w-60 h-60">
     </div>
     

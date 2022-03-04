@@ -1,4 +1,4 @@
-<div class="w-[1141px] h-64 mt-8 shadow-xl flex cursor-pointer">
+<div class="w-[1141px] h-64 mt-8 shadow-xl flex cursor-pointer pb-1">
     <div class="w-80 h-52 flex justify-center items-center">
         <img src="{{ $link }}" >
     </div>
