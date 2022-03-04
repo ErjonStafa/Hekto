@@ -597,6 +597,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mr-9{
   margin-right: 2.25rem;
 }
+.mt-64{
+  margin-top: 16rem;
+}
+.mt-56{
+  margin-top: 14rem;
+}
 .box-border{
   box-sizing: border-box;
 }
@@ -1376,6 +1382,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .group:hover .group-hover\:mt-48{
   margin-top: 12rem;
+}
+.group:hover .group-hover\:mt-56{
+  margin-top: 14rem;
+}
+.group:hover .group-hover\:mt-36{
+  margin-top: 9rem;
+}
+.group:hover .group-hover\:mt-28{
+  margin-top: 7rem;
 }
 .group:hover .group-hover\:flex{
   display: flex;
