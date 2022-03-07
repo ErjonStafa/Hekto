@@ -76,7 +76,7 @@ window.onload = () => {
 
     document.querySelector('#grid').addEventListener('click', function (e) {
         e.preventDefault();
-        gridSection.style.display = 'block';
+        gridSection.style.display = 'flex';
         currectUrl.innerText = 'Shop Grid Default';
         currectUrlTitle.innerText = 'Shop Grid Default';
         listSection.style.display = 'none';
