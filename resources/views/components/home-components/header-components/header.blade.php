@@ -42,7 +42,7 @@
                     :options="$options" />
             </div>
             {{-- login --}}
-            <a href="/login" id="login" class="flex">
+            <a href="/pages/my-account" class="flex">
                 <div class="2xl:ml-5 ml-3 2xl:mr-2 mr-1">
                     Login
                 </div>
@@ -86,7 +86,7 @@
                 :options="$options" />
         </div>
         {{-- login --}}
-        <a href="/login" id="login" class="flex mt-10">
+        <a href="/pages/my-account" class="flex mt-10">
             <div >
                 Login
             </div>

@@ -1,6 +1,7 @@
 require('./bootstrap');
 
 window.onload = () => {
+
     // show and hide languages
 
     const currentSelectedLanguage = document.getElementById('current-select-language');
@@ -8,7 +9,7 @@ window.onload = () => {
 
     currentSelectedLanguage.onclick = () => {
         otherSelectLanguage.classList.toggle('hidden');
-    }
+    };
 
     //change language to english
     const englishLang = document.getElementById('English');
@@ -16,7 +17,7 @@ window.onload = () => {
     englishLang.onclick = () => {
         currentSelectedLanguageText.innerHTML = englishLang.innerText;
         otherSelectLanguage.classList.toggle('hidden');
-    }
+    };
 
     //change language to Albanian
 
@@ -25,7 +26,7 @@ window.onload = () => {
     albanianLang.onclick = () => {
         currentSelectedLanguageText.innerHTML = albanianLang.innerText;
         otherSelectLanguage.classList.toggle('hidden');
-    }
+    };
 
 
     // show and hide currency
@@ -35,7 +36,7 @@ window.onload = () => {
 
     currentSelectedCurrency.onclick = () => {
         otherSelectCurrency.classList.toggle('hidden');
-    }
+    };
 
     //change currency to USD
     const USD = document.getElementById('USD');
@@ -43,7 +44,7 @@ window.onload = () => {
     USD.onclick = () => {
         currentSelectedCurrencyText.innerHTML = USD.innerText;
         otherSelectCurrency.classList.toggle('hidden');
-    }
+    };
 
     //change currency to EUR
     const EUR = document.getElementById('EUR');
@@ -51,7 +52,7 @@ window.onload = () => {
     EUR.onclick = () => {
         currentSelectedCurrencyText.innerHTML = EUR.innerText;
         otherSelectCurrency.classList.toggle('hidden');
-    }
+    };
 
     //toggle mobile dropdown in header
 
@@ -74,14 +75,28 @@ window.onload = () => {
         listSection.style.display = 'block';
     });
 
-    document.querySelector('#grid').addEventListener('click', function (e) {
-        e.preventDefault();
-        gridSection.style.display = 'flex';
-        currectUrl.innerText = 'Shop Grid Default';
-        currectUrlTitle.innerText = 'Shop Grid Default';
-        listSection.style.display = 'none';
-    });
+
+    
+
+
 };
+
+
+//change from login to register
+const login = document.getElementById('login');
+const register = document.getElementById('register');
+
+document.querySelector('#create-account').addEventListener('click', function (e) {
+    e.preventDefault();
+    login.style.display = 'none';
+    register.style.display = 'flex';
+});
+
+document.querySelector('#sign-in').addEventListener('click', function (e) {
+    e.preventDefault();
+    login.style.display = 'flex';
+    register.style.display = 'none';
+});
 // first swiper
 var swiper = new Swiper(".swiper1", {
     pagination: {

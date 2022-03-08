@@ -2233,15 +2233,21 @@ window.onload = function () {
     currectUrlTitle.innerText = 'Shop List';
     listSection.style.display = 'block';
   });
-  document.querySelector('#grid').addEventListener('click', function (e) {
-    e.preventDefault();
-    gridSection.style.display = 'flex';
-    currectUrl.innerText = 'Shop Grid Default';
-    currectUrlTitle.innerText = 'Shop Grid Default';
-    listSection.style.display = 'none';
-  });
-}; // first swiper
+}; //change from login to register
 
+
+var login = document.getElementById('login');
+var register = document.getElementById('register');
+document.querySelector('#create-account').addEventListener('click', function (e) {
+  e.preventDefault();
+  login.style.display = 'none';
+  register.style.display = 'flex';
+});
+document.querySelector('#sign-in').addEventListener('click', function (e) {
+  e.preventDefault();
+  login.style.display = 'flex';
+  register.style.display = 'none';
+}); // first swiper
 
 var swiper = new Swiper(".swiper1", {
   pagination: {

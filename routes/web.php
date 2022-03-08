@@ -32,3 +32,10 @@ Route::get('pages/about-us', function () {
 Route::get('pages/contact-us', function () {
     return view('components.contact-us');
 })->name('Home.Pages.Contact Us');
+
+Route::get('pages/my-account', function () {
+    return view('components.my_account');
+})->name('Home.Pages.My Account');
+
+
+Route::post('pages/my-account/sign-in',);
