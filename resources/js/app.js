@@ -1,4 +1,10 @@
 require('./bootstrap');
+import Alpine from 'alpinejs'
+ 
+window.Alpine = Alpine;
+ 
+Alpine.start();
+
 
 window.onload = () => {
 
@@ -56,7 +62,7 @@ window.onload = () => {
 
     //toggle mobile dropdown in header
 
-    document.querySelector('#header-drop').addEventListener('click', function(){
+    document.querySelector('#header-drop').addEventListener('click', function () {
         document.querySelector('#header-items').classList.toggle('hidden');
     });
 
@@ -76,8 +82,10 @@ window.onload = () => {
     });
 
 
+    // Create user
     
 
+    //Log in
 
 };
 
@@ -92,81 +100,10 @@ document.querySelector('#create-account').addEventListener('click', function (e)
     register.style.display = 'flex';
 });
 
-document.querySelector('#sign-in').addEventListener('click', function (e) {
+document.querySelector('#signIn').addEventListener('click', function (e) {
     e.preventDefault();
     login.style.display = 'flex';
     register.style.display = 'none';
 });
-// first swiper
-var swiper = new Swiper(".swiper1", {
-    pagination: {
-        el: ".swiper-pagination1",
-        clickable: true,
-        draggable: true,
-    },
-    mousewheel: true,
-    loop: true,
-    loopedSlides: 50,
 
-    slidesPerView: 'auto',
 
-});
-//second swiper
-var swiper = new Swiper(".swiper2", {
-    pagination: {
-        el: ".swiper-pagination2",
-        clickable: true,
-        draggable: true,
-        dynamicBullets: true,
-        dynamicMainBullets: 4,
-    },
-    slidesPerView: 4,
-    spaceBetween: 40,
-    mousewheel: true,
-    breakpoints: {
-        320: {
-         slidesPerView: 1,
-        },
-        640: {
-            slidesPerView: 2,
-        },
-        816: {
-            slidesPerView: 3,
-        },
-        1088: {
-            slidesPerView: 4,
-        },
-    },
-    loop: true,
-});
-
-//third swiper
-var swiper = new Swiper(".swiper3", {
-    pagination: {
-        el: ".swiper-pagination3",
-        clickable: true,
-        draggable: true,
-        dynamicBullets: true,
-        dynamicMainBullets: 3,
-    },
-    mousewheel: true,
-    slidesPerView: 4,
-    spaceBetween: 40,
-    breakpoints: {
-        320: {
-         slidesPerView: 1,
-        },
-        552: {
-            slidesPerView: 2,
-        },
-        828: {
-            slidesPerView: 3,
-        },
-        1104: {
-            slidesPerView: 4,
-        },
-    },
-    loop: true,
-    loopedSlides: 50,
-    slidesPerView: 'auto',
-});

@@ -42,12 +42,37 @@
                     :options="$options" />
             </div>
             {{-- login --}}
+
+            @if (session()->has('role'))
+            @php
+            $role = session()->get('role');
+            @endphp
+
+            @if ($role == 'user')
+            <a href="/pages/my-account/log-out" class="flex">
+                <div class="2xl:ml-5 ml-3 2xl:mr-2 mr-1">
+                    Sign out
+                </div>
+                <x-fas-sign-out-alt class="w-4 h-4  " />
+            </a>
+            @else
             <a href="/pages/my-account" class="flex">
                 <div class="2xl:ml-5 ml-3 2xl:mr-2 mr-1">
                     Login
                 </div>
                 <x-far-user class="w-4 h-4  " />
             </a>
+            @endif
+            
+            @else
+            <a href="/pages/my-account" class="flex">
+                <div class="2xl:ml-5 ml-3 2xl:mr-2 mr-1">
+                    Login
+                </div>
+                <x-far-user class="w-4 h-4  " />
+            </a>
+            @endif
+
             {{-- wishlist --}}
             <a href="/wishlist" class="flex">
                 <div class="2xl:ml-5 ml-3 2xl:mr-2 mr-1">
@@ -86,8 +111,9 @@
                 :options="$options" />
         </div>
         {{-- login --}}
+
         <a href="/pages/my-account" class="flex mt-10">
-            <div >
+            <div>
                 Login
             </div>
             <x-far-user class="w-4 h-4  " />

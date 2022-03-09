@@ -1,3 +1,5 @@
+const { default: Swiper } = require('swiper');
+
 window._ = require('lodash');
 
 /**
@@ -6,7 +8,6 @@ window._ = require('lodash');
  * CSRF token as a header based on the value of the "XSRF" token cookie.
  */
 window.$ = require('jquery');
-
 
 window.axios = require('axios');
 

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,9 +34,18 @@ Route::get('pages/contact-us', function () {
     return view('components.contact-us');
 })->name('Home.Pages.Contact Us');
 
-Route::get('pages/my-account', function () {
-    return view('components.my_account');
-})->name('Home.Pages.My Account');
+
+if (session()->has('role')) {
+    Route::get('pages/my-account', function () {
+        return view('errors.404');
+    })->name('Home.Pages.My Account');
+} else {
+    Route::get('pages/my-account', function () {
+        return view('components.my_account');
+    })->name('Home.Pages.My Account');
+}
 
 
-Route::post('pages/my-account/sign-in',);
+Route::get('/pages/my-account/log-out',[UserController::class, 'logout']);
+Route::post('pages/my-account/login', [UserController::class, 'login']);
+Route::post('pages/my-account/register', [UserController::class, 'register']);
