@@ -5709,10 +5709,26 @@ window.onload = function () {
     currectUrl.innerText = 'Shop List';
     currectUrlTitle.innerText = 'Shop List';
     listSection.style.display = 'block';
-  }); // Create user
-  //Log in
-}; //change from login to register
+  });
+  document.querySelector('#grid').addEventListener('click', function (e) {
+    e.preventDefault();
+    gridSection.style.display = 'flex';
+    currectUrl.innerText = 'Shop Grid Default';
+    currectUrlTitle.innerText = 'Shop Grid Default';
+    listSection.style.display = 'none';
+  });
+};
 
+$(document).ready(function () {
+  $('#search').on('keyup', function () {
+    var word = $(this).val();
+    $.get('/search', {
+      word: word
+    }, function (data) {
+      $('#found').html(data);
+    });
+  });
+}); //change from login to register
 
 var login = document.getElementById('login');
 var register = document.getElementById('register');

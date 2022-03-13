@@ -8,7 +8,7 @@
 </div>
 
 <div class="2xl:mt-20 mt-12">
-    <x-home-components.body-components.featured />
+    <x-featured />
 </div>
 
 <div class="2xl:mt-32 mt-24 text-center">
@@ -16,7 +16,7 @@
 </div>
 
 <div class="2xl:mt-20 mt-12">
-    <x-home-components.body-components.latest />
+    <x-latest />
 </div>
 
 <div class="2xl:mt-32 mt-24 text-center">
@@ -40,7 +40,7 @@
 </div>
 
 <div class="2xl:mt-32 mt-24">
-    <x-home-components.trending-components.trending />
+    <x-trending />
 </div>
 
 <div class="2xl:mt-32 mt-24 text-center">

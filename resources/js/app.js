@@ -80,15 +80,25 @@ window.onload = () => {
         currectUrlTitle.innerText = 'Shop List';
         listSection.style.display = 'block';
     });
-
-
-    // Create user
-    
-
-    //Log in
+    document.querySelector('#grid').addEventListener('click', function (e) {
+        e.preventDefault();
+        gridSection.style.display = 'flex';
+        currectUrl.innerText = 'Shop Grid Default';
+        currectUrlTitle.innerText = 'Shop Grid Default';
+        listSection.style.display = 'none';
+    });
 
 };
 
+
+$(document).ready(function(){
+    $('#search').on('keyup', function(){
+        var word = $(this).val();
+        $.get('/search', {word: word}, function(data){
+            $('#found').html(data);
+        });
+    });
+});
 
 //change from login to register
 const login = document.getElementById('login');

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SearchController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -44,6 +45,8 @@ if (session()->has('role')) {
         return view('components.my_account');
     })->name('Home.Pages.My Account');
 }
+
+Route::get('/search', [SearchController::class, 'search']);
 
 
 Route::get('/pages/my-account/log-out',[UserController::class, 'logout']);

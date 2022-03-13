@@ -1,24 +1,9 @@
-@php
-$products = array(
-0=>array('link'=>'Images/Latest/image 3.png', 'name' => 'Comfort Handy Craft', 'discount' => '$42.00', 'price'=>
-'$65.00'),
-1=>array('link'=>'Images/Latest/image 15.png', 'name' => 'Comfort Handy Craft', 'discount' => '$42.00', 'price'=>
-'$65.00'),
-2=>array('link'=>'Images/Latest/image 23.png', 'name' => 'Comfort Handy Craft', 'discount' => '$42.00', 'price'=>
-'$65.00'),
-3=>array('link'=>'Images/Latest/image 32.png', 'name' => 'Comfort Handy Craft', 'discount' => '$42.00', 'price'=>
-'$65.00'),
-4=>array('link'=>'Images/Latest/image 1166.png', 'name' => 'Comfort Handy Craft', 'discount' => '$42.00', 'price'=>
-'$65.00'),
-5=>array('link'=>'Images/Latest/image 1168.png', 'name' => 'Comfort Handy Craft', 'discount' => '$42.00', 'price'=>
-'$65.00')
-);
-@endphp
-
-
 <div class="flex flex-wrap 2xl:justify-start justify-center items-center">
     @foreach ($products as $item)
-        <x-home-components.body-components.latest-card :link="$item['link']" :name="$item['name']" :discount="$item['discount']"
-            :price="$item['price']" />
+    @php
+        $discount = $item->cmimi - (0.20 * $item->cmimi);
+    @endphp
+        <x-home-components.body-components.latest-card :id="$item->id" :link="$item->img_slug" :name="$item->emri" :discount="'$'.number_format((float)$discount, 2, '.', '')"
+            :price="'$'.number_format((float)$item->cmimi, 2, '.', '')" />
     @endforeach
 </div>
