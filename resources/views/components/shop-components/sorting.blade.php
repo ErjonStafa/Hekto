@@ -6,7 +6,7 @@
             </div>
             {{-- this should change --}}
             <div class="font-lato text-sub-text-color text-xs">
-                About 9620 results(0.62seconds)
+                About {{ $results }} results({{ $time }}s)
             </div>
         </div>
         <div class="inline-flex sm:ml-5 ml-2 font-lato sm:text-base text-sm text-[#3F509E]">
@@ -17,9 +17,9 @@
     <div class="flex items-center">
         <div class="inline-flex sm:ml-5 ml-2 font-lato sm:text-base text-sm text-off-navy-blue">
             <div>Sort By: </div>
-            <select name="sorting" class="ml-1 w-24 h-7 cursor-pointer text-sub-text-color text-xs focus:outline-none box-border border border-lightgrey">
-                <option value="best-match" selected>Best Match</option>
+            <select name="sorting" class="ml-1 w-24 cursor-pointer text-sub-text-color text-xs focus:outline-none box-border border border-lightgrey">
                 <option value="name">Name</option>
+                <option value="price">Price</option>
             </select>
         </div>
         <div class="flex justify-center items-center ml-5 font-lato sm:text-base text-sm text-off-navy-blue">

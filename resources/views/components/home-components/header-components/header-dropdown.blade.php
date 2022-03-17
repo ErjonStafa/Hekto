@@ -3,7 +3,7 @@
         <div id="current-select-{{ $type }}-text" class="2xl:mr-2 mr-1">
             {{ $selected }}
         </div>
-        <x-bx-chevron-down class="w-5 h-5"/>
+        <x-bx-chevron-down class="w-5"/>
     </div>
     
     <div class="absolute">

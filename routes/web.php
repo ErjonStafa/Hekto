@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\PostsController;
 use App\Http\Controllers\SearchController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -19,10 +21,6 @@ Route::get('/', function () {
     return view('components.home');
 })->name('Home');
 
-Route::get('/pages/shop', function () {
-    return view('components.grid-default');
-})->name('Home.Pages.Shop Grid Default');
-
 Route::get('pages/order-completed', function () {
     return view('components.order-complete');
 })->name('Home.Pages.Order Completed'); 
@@ -34,7 +32,6 @@ Route::get('pages/about-us', function () {
 Route::get('pages/contact-us', function () {
     return view('components.contact-us');
 })->name('Home.Pages.Contact Us');
-
 
 if (session()->has('role')) {
     Route::get('pages/my-account', function () {
@@ -48,6 +45,14 @@ if (session()->has('role')) {
 
 Route::get('/search', [SearchController::class, 'search']);
 
+Route::get('/pages/shop', [CategoryController::class, 'indexByName'])->name('Home.Pages.Shop Grid Default');
+Route::get('/pages/shop/category/{id}', [CategoryController::class, 'showByName'])->name('Home.Pages.Shop Grid Default');
+
+Route::get('/pages/shop/order-by-price', [CategoryController::class, 'indexByPrice'])->name('Home.Pages.Shop Grid Default');
+Route::get('/pages/shop/category/order-by-price/{id}', [CategoryController::class, 'showByPrice'])->name('Home.Pages.Shop Grid Default');
+
+Route::get('pages/blogs', [PostsController::class, 'index'])->name('Home.Pages.Blog page');
+Route::get('pages/blogs/{blog}', [PostsController::class, 'show'])->name('Home.Pages.Single blog');
 
 Route::get('/pages/my-account/log-out',[UserController::class, 'logout']);
 Route::post('pages/my-account/login', [UserController::class, 'login']);

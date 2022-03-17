@@ -5722,11 +5722,40 @@ window.onload = function () {
 $(document).ready(function () {
   $('#search').on('keyup', function () {
     var word = $(this).val();
-    $.get('/search', {
-      word: word
-    }, function (data) {
-      $('#found').html(data);
-    });
+    $('#found-container').removeClass('h-0');
+    $('#loading').addClass('flex');
+    $('#loading').removeClass('hidden');
+
+    if (word !== '') {
+      $.ajax({
+        url: '/search',
+        type: 'GET',
+        data: {
+          word: word
+        },
+        success: function success(data) {
+          $('#loading').addClass('hidden');
+          $('#loading').removeClass('flex');
+
+          if (data === null) {
+            $('#found').html('Nothing found');
+          } else {
+            $('#found').html(data);
+          }
+        }
+      });
+    } else {
+      $('#found').html('');
+      $('#found-container').removeClass('h-0');
+      $('#loading').addClass('hidden');
+      $('#loading').removeClass('flex');
+    }
+  });
+  $('#search').on('change', function () {
+    if (!$(this).is(':focus')) {
+      $('#found-container').removeClass('h-0');
+      $('#found').html('');
+    }
   });
 }); //change from login to register
 

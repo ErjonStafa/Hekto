@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -9,9 +10,13 @@ class SearchController extends Controller
 {
     protected $found;
 
+    public function index(){
+        $products = Product::all();
+    }
+
     public function search(Request $request)
     {
-        $this->found = DB::table('products')->where('emri', 'LIKE', "%{$request->word}%")->orWhere('emri',$request->word)->get();
+        $this->found = DB::table('products')->where('emri', 'LIKE', "%{$request->word}%")->get();
         $found = '';
         foreach ($this->found as $key => $product) {
             $found .= '<a href="/pages/shop/'.$product->id.'" class="flex border-b border-b-slate-500 bg-white hover:bg-slate-400 rounded md:w-64 sm:w-48 h-[60px]">

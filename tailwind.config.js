@@ -57,6 +57,9 @@ module.exports = {
       'boxShadow': {
         'custom': '0 0 25px 0 rgba(0, 0, 0, 0.1)',
         'inset': '0px 8px 40px rgba(49, 32, 138, 0.05)',
+      },
+      'margin': {
+        '112': '448px',
       }
     },
     fontFamily:{
@@ -67,5 +70,8 @@ module.exports = {
       'lato' : ['Lato'],
     }
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide'),
+    require('@tailwindcss/forms')
+  ],
 }

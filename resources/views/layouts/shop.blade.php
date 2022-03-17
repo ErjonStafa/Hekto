@@ -1,9 +1,6 @@
 @extends('layouts.pages')
 
 @section('sections')
-<div>
-    <x-shop-components.sorting />
-</div>
 
 @yield('body')
 
