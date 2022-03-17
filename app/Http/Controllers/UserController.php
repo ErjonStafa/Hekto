@@ -6,11 +6,21 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
 
 class UserController extends Controller
 {
 
     public function login(Request $request){
+
+        $validated = Validator::make($request->all(),[
+            'email'=>'required|email',
+            'password'=>'required|min:8',
+        ]);
+
+        if ($validated->fails()) {
+            return redirect()->back()->with('success','User was not logged in');
+        }
 
         $email = $request->input('email');
         $password = $request->input('password');
@@ -33,8 +43,18 @@ class UserController extends Controller
     }
 
     public function register(Request $request){
-        $user = new User;
 
+        $validated = Validator::make($request->all(),[
+            'new-email'=>'required|email',
+            'new-password'=>'required|min:8',
+            'confirm-new-password'=>'required|min:8|same:new-password',
+        ]);
+
+        if ($validated->fails()) {
+            return redirect()->back()->with('success','User was not added');
+        }
+
+        $user = new User;
         $user->email = $request->input('new-email');
         $user->password = Hash::make($request->input('new-password'));
         $user->save();

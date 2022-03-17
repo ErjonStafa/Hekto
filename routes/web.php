@@ -49,7 +49,7 @@ Route::get('/pages/shop', [CategoryController::class, 'indexByName'])->name('Hom
 Route::get('/pages/shop/category/{id}', [CategoryController::class, 'showByName'])->name('Home.Pages.Shop Grid Default');
 
 Route::get('/pages/shop/order-by-price', [CategoryController::class, 'indexByPrice'])->name('Home.Pages.Shop Grid Default');
-Route::get('/pages/shop/category/order-by-price/{id}', [CategoryController::class, 'showByPrice'])->name('Home.Pages.Shop Grid Default');
+Route::get('/pages/shop/category/{id}/order-by-price', [CategoryController::class, 'showByPrice'])->name('Home.Pages.Shop Grid Default');
 
 Route::get('pages/blogs', [PostsController::class, 'index'])->name('Home.Pages.Blog page');
 Route::get('pages/blogs/{blog}', [PostsController::class, 'show'])->name('Home.Pages.Single blog');
