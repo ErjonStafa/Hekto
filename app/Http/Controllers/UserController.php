@@ -19,7 +19,7 @@ class UserController extends Controller
         ]);
 
         if ($validated->fails()) {
-            return redirect()->back()->with('success','User was not logged in');
+            return redirect()->back()->with('success','Password to short');
         }
 
         $email = $request->input('email');
@@ -44,19 +44,35 @@ class UserController extends Controller
 
     public function register(Request $request){
 
+        $username = $request->input('username');
+
+        $found_usernames = User::where('username', '=', $username)->count();
+
+        if ($found_usernames != 0) {
+            return redirect()->back()->with('success','This username already exists');
+        }
+        $email = $request->input('email');
+
+        $found_emails = User::where('email', '=', $email)->count();
+
+        if ($found_emails != 0) {
+            return redirect()->back()->with('success','This email already used');
+        }
+
         $validated = Validator::make($request->all(),[
-            'new-email'=>'required|email',
-            'new-password'=>'required|min:8',
-            'confirm-new-password'=>'required|min:8|same:new-password',
+            'email'=>'required|email|unique:users',
+            'password'=>'required|min:8',
+            'confirm-new-password'=>'required|min:8|same:password',
         ]);
 
         if ($validated->fails()) {
-            return redirect()->back()->with('success','User was not added');
+            return redirect()->back()->with('success','Please complete the fields correctly');
         }
 
         $user = new User;
-        $user->email = $request->input('new-email');
-        $user->password = Hash::make($request->input('new-password'));
+        $user->username = $request->input('username');
+        $user->email = $request->input('email');
+        $user->password = Hash::make($request->input('password'));
         $user->save();
         return redirect()->back()->with('success','User Added Successfully');
     }

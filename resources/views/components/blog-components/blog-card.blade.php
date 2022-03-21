@@ -1,4 +1,4 @@
-<div class="w-92 h-fit mr-9 mt-5 group cursor-pointer flex flex-col">
+<div class="w-92 h-fit mr-9 mt-5 flex flex-col">
     <div class="w-92 h-64 rounded-lg">
         <img src="{{ $imgLink }}" class="w-full h-full rounded-lg">
     </div>
@@ -20,8 +20,8 @@
             {{ $excerpt }}
         </div>
     </div>
-    <div class="font-lato text-navy-blue mx-5 mt-3 group-hover:text-pink underline underline-offset-2">
-        <a href="/blog/post/">
+    <div class="font-lato text-navy-blue group mx-5 mt-3 hover:text-pink underline underline-offset-2">
+        <a href="/pages/blogs/{{ $id }}">
             Read More
         </a>
     </div>

@@ -8,7 +8,7 @@
         </div>
         
     </div>
-    <a href="/pages/shop" class="hidden absolute mt-56 group-hover:mt-28 group-hover:transition group-hover:flex justify-center w-24 h-7 leading-7 text-center text-white bg-green-500 font-josefin text-xs rounded-sm">View Shop</a>
+    <a href="/pages/shop/{{ $id }}" class="hidden absolute mt-56 group-hover:mt-28 group-hover:transition group-hover:flex justify-center w-24 h-7 leading-7 text-center text-white bg-green-500 font-josefin text-xs rounded-sm">View Shop</a>
     
     <div>
         <div class="mt-3 font-josefin text-navy-blue text-xl">

@@ -76,7 +76,7 @@ class ProductSeeder extends Seeder
             'kodi' => 'Y493458',
             'img_slug' => '/Images/Latest/image 1166.png',
             'cmimi'=>'65.00',
-            'kategoria_id'=> '3',
+            'kategoria_id'=> '4',
             'sasia'=>'14',
         ]);
     }

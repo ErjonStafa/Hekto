@@ -56,7 +56,7 @@
 </div>
 
 <div>
-    <x-home-components.top-categories-components.top-categories />
+    <x-top />
 </div>
 
 <div class="flex justify-center items-center mt-16">
@@ -81,5 +81,5 @@
 </div>
 
 <div class="2xl:mt-32 mt-16">
-    <x-blog-components.top-blogs/>
+    <x-latestblogs/>
 </div>

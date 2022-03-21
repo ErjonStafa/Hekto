@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
-            $table->string('autori');
+            $table->unsignedBigInteger('autori_id');
             $table->string('img_slug');
             $table->string('post_title');
             $table->date('publish_date');
@@ -24,6 +24,7 @@ return new class extends Migration
             $table->timestamps();
 
             $table->index('id');
+            $table->foreign('autori_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 

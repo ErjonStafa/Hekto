@@ -8,10 +8,13 @@
             <x-home-components.body-components.descriptions :text="'Please sign up using account detail below.'" />
         </div>
         <div class="w-full mt-3">
-            <x-contact-us-components.input :type="'email'" :name="'new-email'" :placeholder="'Email Address'" />
+            <x-contact-us-components.input :type="'text'" :name="'username'" :placeholder="'Username'" />
         </div>
         <div class="w-full mt-3">
-            <x-contact-us-components.input :type="'password'" :name="'new-password'" :placeholder="'Password'" />
+            <x-contact-us-components.input :type="'email'" :name="'email'" :placeholder="'Email Address'" />
+        </div>
+        <div class="w-full mt-3">
+            <x-contact-us-components.input :type="'password'" :name="'password'" :placeholder="'Password'" />
         </div>
         <div class="w-full mt-3">
             <x-contact-us-components.input :type="'password'" :name="'confirm-new-password'"

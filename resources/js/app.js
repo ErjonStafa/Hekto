@@ -108,8 +108,8 @@ $(document).ready(function () {
                 success: function (data) {
                     $('#loading').addClass('hidden');
                     $('#loading').removeClass('flex');
-                    if (data === null) {
-                        $('#found').html('Nothing found');
+                    if (data === '') {
+                        $('#found-container').addClass('h-0');
                     } else {
                         $('#found').html(data);
                     }
@@ -118,14 +118,14 @@ $(document).ready(function () {
         }
         else {
             $('#found').html('');
-            $('#found-container').removeClass('h-0');
+            $('#found-container').addClass('h-0');
             $('#loading').addClass('hidden');
             $('#loading').removeClass('flex');
         }
     });
     $('#search').on('change', function () {
         if (!$(this).is(':focus')) {
-            $('#found-container').removeClass('h-0');
+            $('#found-container').addClass('h-0');
             $('#found').html('');
         }
     });

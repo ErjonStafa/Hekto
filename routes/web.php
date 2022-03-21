@@ -46,13 +46,13 @@ if (session()->has('role')) {
 Route::get('/search', [SearchController::class, 'search']);
 
 Route::get('/pages/shop', [CategoryController::class, 'indexByName'])->name('Home.Pages.Shop Grid Default');
-Route::get('/pages/shop/category/{id}', [CategoryController::class, 'showByName'])->name('Home.Pages.Shop Grid Default');
+Route::get('/pages/shop/category/{id}', [CategoryController::class, 'showByName'])->name('Home.Pages.Shop Grid Default')->where('id', '[0-9]+');
 
 Route::get('/pages/shop/order-by-price', [CategoryController::class, 'indexByPrice'])->name('Home.Pages.Shop Grid Default');
-Route::get('/pages/shop/category/{id}/order-by-price', [CategoryController::class, 'showByPrice'])->name('Home.Pages.Shop Grid Default');
+Route::get('/pages/shop/category/{id}/order-by-price', [CategoryController::class, 'showByPrice'])->name('Home.Pages.Shop Grid Default')->where('id', '[0-9]+');
 
 Route::get('pages/blogs', [PostsController::class, 'index'])->name('Home.Pages.Blog page');
-Route::get('pages/blogs/{blog}', [PostsController::class, 'show'])->name('Home.Pages.Single blog');
+Route::get('pages/blogs/{blog}', [PostsController::class, 'show'])->name('Home.Pages.Single blog')->where('blog', '[0-9]+');
 
 Route::get('/pages/my-account/log-out',[UserController::class, 'logout']);
 Route::post('pages/my-account/login', [UserController::class, 'login']);
