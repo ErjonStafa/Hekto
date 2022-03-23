@@ -25,13 +25,14 @@ class UserController extends Controller
         $email = $request->input('email');
         $password = $request->input('password');
 
-        $user = DB::table('users')->select('email', 'password')->where('email', $email)->get();
+        $user = DB::table('users')->select('id','email', 'password')->where('email', $email)->get();
         
         if(count($user) == 0){
             return redirect()->back()->with('success','Email not found');
         }
         else if(Hash::check($password, $user->first()->password)){
             session(['role'=> 'user']);
+            session(['user'=> $user->first()->id]);
             return redirect('/')->with('success','Logged in');
         };
 

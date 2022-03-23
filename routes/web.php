@@ -57,3 +57,6 @@ Route::get('pages/blogs/{blog}', [PostsController::class, 'show'])->name('Home.P
 Route::get('/pages/my-account/log-out',[UserController::class, 'logout']);
 Route::post('pages/my-account/login', [UserController::class, 'login']);
 Route::post('pages/my-account/register', [UserController::class, 'register']);
+
+Route::post('/create-comment',[PostsController::class, 'createComment']);
+Route::post('/create-post',[PostsController::class, 'createPost']);

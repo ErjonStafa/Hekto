@@ -5762,9 +5762,7 @@ $(document).ready(function () {
     if ($(this).val() == 'price') {
       var url = window.location.href;
 
-      if (url.includes('/order-by-price')) {
-        console.log('hi');
-      } else {
+      if (url.includes('/order-by-price')) {} else {
         url = url + "/order-by-price";
         window.location.href = url;
       }
@@ -5774,9 +5772,7 @@ $(document).ready(function () {
       if (url.includes('/order-by-price')) {
         url = url.replace('/order-by-price', '');
         window.location.href = url;
-      } else {
-        console.log('hi');
-      }
+      } else {}
     }
   });
 }); //change from login to register

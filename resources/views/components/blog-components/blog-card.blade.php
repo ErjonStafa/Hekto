@@ -1,6 +1,6 @@
 <div class="w-92 h-fit mr-9 mt-5 flex flex-col">
     <div class="w-92 h-64 rounded-lg">
-        <img src="{{ $imgLink }}" class="w-full h-full rounded-lg">
+        <img src="/storage/{{$imgLink}}" class="w-full h-full rounded-lg">
     </div>
     <div class="flex mx-5 mt-5 shadow-inset">
         <x-fas-pen-nib class="w-5 text-pink mr-2"/>

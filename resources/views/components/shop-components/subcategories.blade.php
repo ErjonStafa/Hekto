@@ -1,19 +1,19 @@
-<div class="cursor-pointer font-lato w-40 bg-background-grey text-blue h-fit" x-data="{show: false}" x-on:click="show = !show">
-    <div class="flex">
+<div class="cursor-pointer font-lato  text-blue" x-data="{show: false}" x-on:click="show = !show">
+    <div class="flex border-t border-dashed border-t-navy-blue p-3">
         <div>{{ $name }}</div>
         <x-bx-chevron-down class="w-5"/>
     </div>
-    <div class="ml-3">
-        <ul x-show="show">
+    <div>
+        <div x-show="show">
             @foreach ($subcategories as $subcategory)
             @if ($subcategory->parent_id == $categoryId)
-            <li>
-                <a href="/pages/shop/category/{{ $subcategory->id }}" id="{{ ''.$subcategory->emri.$subcategory->id.'' }}" class="font-lato text-[#72718F]">
+            <div class="font-lato border border-dashed border-t-navy-blue py-1 px-6">
+                <a href="/pages/shop/category/{{ $subcategory->id }}" id="{{ ''.$subcategory->emri.$subcategory->id.'' }}">
                     {{ $subcategory->emri }}
                 </a>
-            </li>
+            </div>
             @endif
             @endforeach
-        </ul>
+        </div>
     </div>
 </div>

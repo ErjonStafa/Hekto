@@ -51,7 +51,6 @@
                 clickable: true,
                 draggable: true,
             },
-            mousewheel: true,
             loop: true,
             loopedSlides: 50,
         
@@ -69,7 +68,6 @@
             },
             slidesPerView: 4,
             spaceBetween: 40,
-            mousewheel: true,
             breakpoints: {
                 320: {
                     slidesPerView: 1,
@@ -97,7 +95,6 @@
                 dynamicBullets: true,
                 dynamicMainBullets: 3,
             },
-            mousewheel: true,
             slidesPerView: 4,
             spaceBetween: 40,
             breakpoints: {

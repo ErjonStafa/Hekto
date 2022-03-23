@@ -137,7 +137,6 @@ $(document).ready(function () {
         if ($(this).val() == 'price') {
             var url = window.location.href;
             if (url.includes('/order-by-price')) {
-                console.log('hi');
             }
             else {
                 url = url + "/order-by-price";
@@ -150,7 +149,6 @@ $(document).ready(function () {
                 window.location.href = url;
             }
             else {
-                console.log('hi');
             }
         }
     });

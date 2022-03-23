@@ -30,7 +30,7 @@
                     @if ($i <= $star)
                     <x-fas-star class="w-3 text-[#FFC416]"/>
                     @else
-                    <x-fas-star class="w-3 text-[#B2B2B2]" />
+                    <x-fas-star class="w-3 text-[#B2B2B2]"/>
                     @endif
                 @endfor
                 

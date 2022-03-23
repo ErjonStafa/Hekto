@@ -1,6 +1,6 @@
 <div class="w-5/12 mt-9">
     <div>
-        <img src="{{ $imgLink }}" class="w-full rounded">
+        <img src="/storage/{{$imgLink}}" class="w-full rounded">
     </div>
 
     <div class="flex mt-5 shadow-inset">

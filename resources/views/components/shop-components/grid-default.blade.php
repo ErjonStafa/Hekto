@@ -4,27 +4,29 @@
 
 
 <div class="grid grid-flow-row grid-cols-10">
-    <div class="col-span-2 mt-28 flex flex-col mx-20 h-fit">
-        <div class="text-xl text-navy-blue underline underline-offset-2">
+    <div class="col-span-2 mt-28 flex flex-col justify-center items-center h-fit">
+        <div class="text-xl text-white bg-off-navy-blue px-3 w-5/6">
             Categories
         </div>
 
-        @foreach ($categories as $category)
-        @foreach ($subcategories as $subcategory)
-        @if ($subcategory->parent_id == $category->id)
-        <div class="h-fit my-3">
-            <x-shop-components.subcategories :categoryId="$category->id" :name="$category->emri"
-                :subcategories="$subcategories" />
+        <div class="bg-grey border border-navy-blue w-5/6">
+            @foreach ($categories as $category)
+            
+                @foreach ($subcategories as $subcategory)
+                    @if ($subcategory->parent_id == $category->id)
+                    <div>
+                        <x-shop-components.subcategories :categoryId="$category->id" :name="$category->emri"
+                            :subcategories="$subcategories" />
+                    </div>
+                    @break
+                    @else
+                    <div>
+                        <x-shop-components.category-name :categoryId="$category->id" :name="$category->emri" />
+                    </div>
+                    @endif
+                @endforeach
+            @endforeach
         </div>
-        @break
-        @else
-        <div class="my-3">
-            <x-shop-components.category-name :categoryId="$category->id" :name="$category->emri" />
-        </div>
-        @endif
-        @endforeach
-
-        @endforeach
 
     </div>
     <div class="col-span-7">
