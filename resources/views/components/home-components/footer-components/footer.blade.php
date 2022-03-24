@@ -89,3 +89,6 @@
         </div>
     </div>
 </div>
+<div class="bg-[#E7E4F8] flex justify-center items-center">
+    <x-home-components.footer-components.credits/>
+</div>
