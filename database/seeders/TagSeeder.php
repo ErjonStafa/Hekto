@@ -16,25 +16,22 @@ class TagSeeder extends Seeder
     public function run()
     {
         DB::table('tags')->insert([
-            'tag_name'=>'Chair'
+            'tag_name'=>'Gossip'
         ]);
         DB::table('tags')->insert([
-            'tag_name'=>'Crafted'
+            'tag_name'=>'Clothes'
         ]);
         DB::table('tags')->insert([
-            'tag_name'=>'Sofa'
+            'tag_name'=>'Feelings'
         ]);
         DB::table('tags')->insert([
-            'tag_name'=>'Watch'
+            'tag_name'=>'Traveling'
         ]);
         DB::table('tags')->insert([
-            'tag_name'=>'Plastic'
+            'tag_name'=>'Shopping'
         ]);
         DB::table('tags')->insert([
-            'tag_name'=>'Wood'
-        ]);
-        DB::table('tags')->insert([
-            'tag_name'=>'Leather'
+            'tag_name'=>'Furniture'
         ]);
     }
 }

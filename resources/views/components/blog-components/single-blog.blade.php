@@ -25,6 +25,19 @@
         </div>
     </div>
 
+    <div>
+        <div class="font-josefin text-navy-blue underline underline-offset-2 text-xl mt-20">
+            Tags
+        </div>
+        <div class="grid grid-cols-3">
+            @foreach ($tags as $tag)
+            <div>
+                <a href="/pages/blogs/tag/{{ $tag->id }}" class="text-navy-blue font-josefin text-base hover:text-pink">{{ $tag->tag_name }}</a>
+            </div>
+            @endforeach
+        </div>
+    </div>
+
     <div class="my-12 border w-7/12 border-gray-400"></div>
 
 

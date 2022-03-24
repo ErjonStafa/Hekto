@@ -1,4 +1,4 @@
-<div class="w-5/12 mt-9">
+<div class="w-9/12 mt-9">
     <div>
         <img src="/storage/{{$imgLink}}" class="w-full rounded">
     </div>

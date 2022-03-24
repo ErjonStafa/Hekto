@@ -4,9 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Models\Comment;
 use App\Models\Post;
+use App\Models\Tag;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
@@ -21,14 +23,17 @@ class PostsController extends Controller
         }
 
         $autoret = User::whereIn('id', $id_autori)->get();
+        $tags = Tag::all();
 
-        return view('components.blogs', compact('posts', 'autoret'));
+        return view('components.blogs', compact('posts', 'autoret', 'tags'));
     }
 
     public function show($blog){
         $posts = Post::where('id','=' , $blog)->get();
         $id_autori = array();
+        $posts_id = array();
         foreach ($posts as $key => $post) {
+            array_push($posts_id, $post->id);
             array_push($id_autori, $post->autori_id);
         }
 
@@ -42,7 +47,9 @@ class PostsController extends Controller
 
         $commenters = User::whereIn('id', $id_comment_user)->get();
 
-        return view('components.single-blog', compact('posts', 'autoret','comments', 'commenters'));
+        $tags = Tag::select('tags.*')->join('post_tag' , 'tags.id', '=', 'post_tag.tag_id')->where('post_tag.post_id', '=', $blog,)->get();
+
+        return view('components.single-blog', compact('posts', 'autoret','comments', 'commenters', 'tags'));
     }
 
     public function createPost(Request $request){
@@ -57,7 +64,16 @@ class PostsController extends Controller
         $post->excerpt = Str::limit($request->input('body'), 200, '...');
         $post->text = $request->input('body');
         $post->publish_date = Carbon::today()->toDateString();
+
+        $tags = $request->input('tags');
         $post->save();
+
+        foreach ($tags as $key => $tag) {
+            DB::table('post_tag')->insert([
+                'post_id' => $post->id,
+                'tag_id'=> $tag
+            ]);
+        }
 
         return redirect()->back()->with('success', 'Post Created Successfully');
     }
@@ -72,5 +88,19 @@ class PostsController extends Controller
         $comment->save();
 
         return redirect()->back()->with('success','Comment posted');
+    }
+
+    public function searchByTag($id){
+        $posts = Post::select('posts.*')->join('post_tag', 'posts.id' ,'=', 'post_tag.post_id')->where('post_tag.tag_id', '=', $id)->get();
+        $id_autori = array();
+        foreach ($posts as $key => $post) {
+            array_push($id_autori, $post->autori_id);
+        }
+
+        $autoret = User::whereIn('id', $id_autori)->get();
+
+        $tags = Tag::all();
+
+        return view('components.blogs', compact('posts', 'autoret', 'tags'));
     }
 }

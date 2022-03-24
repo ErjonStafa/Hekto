@@ -51,12 +51,12 @@ Route::get('/pages/shop/category/{id}', [CategoryController::class, 'showByName'
 Route::get('/pages/shop/order-by-price', [CategoryController::class, 'indexByPrice'])->name('Home.Pages.Shop Grid Default');
 Route::get('/pages/shop/category/{id}/order-by-price', [CategoryController::class, 'showByPrice'])->name('Home.Pages.Shop Grid Default')->where('id', '[0-9]+');
 
-Route::get('pages/blogs', [PostsController::class, 'index'])->name('Home.Pages.Blog page');
-Route::get('pages/blogs/{blog}', [PostsController::class, 'show'])->name('Home.Pages.Single blog')->where('blog', '[0-9]+');
-
 Route::get('/pages/my-account/log-out',[UserController::class, 'logout']);
 Route::post('pages/my-account/login', [UserController::class, 'login']);
 Route::post('pages/my-account/register', [UserController::class, 'register']);
 
+Route::get('pages/blogs', [PostsController::class, 'index'])->name('Home.Pages.Blog page');
+Route::get('pages/blogs/{blog}', [PostsController::class, 'show'])->name('Home.Pages.Single blog')->where('blog', '[0-9]+');
+Route::get('/pages/blogs/tag/{id}', [PostsController::class, 'searchByTag'])->name('Home.Pages.Blog page');
 Route::post('/create-comment',[PostsController::class, 'createComment']);
 Route::post('/create-post',[PostsController::class, 'createPost']);
